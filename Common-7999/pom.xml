@@ -23,15 +23,15 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <!-- 添加SpringSecurity依赖 -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-security</artifactId>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash; AOP依赖,一定要加,否则权限拦截验证不生效 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-aop</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!-- AOP依赖,一定要加,否则权限拦截验证不生效 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
         <dependency>
             <groupId> org.springframework.boot </groupId>
             <artifactId> spring-boot-configuration-processor </artifactId>

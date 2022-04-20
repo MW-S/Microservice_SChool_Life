@@ -1,0 +1,480 @@
+2022年-04月-20日 13:39:44.562 ERROR [restartedMain] o.s.c.l.LoggingRebinder - Cannot set level: debu for 'net.mw'
+2022年-04月-20日 13:39:44.578 INFO  [restartedMain] n.m.s.ProviderApplication - The following profiles are active: dev
+2022年-04月-20日 13:39:47.831 WARN  [restartedMain] o.s.b.a.e.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'canteenDao' and 'net.mw.springcloud.dao.CanteenDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carDao' and 'net.mw.springcloud.dao.CarDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'classRoomDao' and 'net.mw.springcloud.dao.ClassRoomDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'deliveryOrderDao' and 'net.mw.springcloud.dao.DeliveryOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'dormitoryDao' and 'net.mw.springcloud.dao.DormitoryDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'dormitoryUserDao' and 'net.mw.springcloud.dao.DormitoryUserDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'foodDao' and 'net.mw.springcloud.dao.FoodDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'goodsDao' and 'net.mw.springcloud.dao.GoodsDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'noteDao' and 'net.mw.springcloud.dao.NoteDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'parkingDao' and 'net.mw.springcloud.dao.ParkingDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'parkingOrderDao' and 'net.mw.springcloud.dao.ParkingOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleOtherDao' and 'net.mw.springcloud.dao.RoleOtherDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'seatDao' and 'net.mw.springcloud.dao.SeatDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'seatOrderDao' and 'net.mw.springcloud.dao.SeatOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'vindicateDao' and 'net.mw.springcloud.dao.VindicateDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'actionPowerDao' and 'net.mw.springcloud.dao.ActionPowerDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleDao' and 'net.mw.springcloud.dao.RoleDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'net.mw.springcloud.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userRoleMapDao' and 'net.mw.springcloud.dao.UserRoleMapDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:39:48.021 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[net.mw.springcloud.dao]' package. Please check your configuration.
+2022年-04月-20日 13:39:48.225 INFO  [restartedMain] o.s.c.c.s.GenericScope - BeanFactory id=f5705622-8e4e-3671-b1c8-21830b25d059
+2022年-04月-20日 13:39:49.508 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022年-04月-20日 13:39:49.523 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2022年-04月-20日 13:39:49.539 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022年-04月-20日 13:39:49.962 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2022年-04月-20日 13:39:49.962 INFO  [restartedMain] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 5353 ms
+2022年-04月-20日 13:39:49.993 ERROR [restartedMain] o.s.b.w.e.t.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'registration' defined in net.mw.springcloud.ProviderApplication: Unsatisfied dependency expressed through method 'registration' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationTokenFilter' defined in file [E:\server\Git\MyGit\SchoolLife\SpringCloud\Common-7999\target\classes\net\mw\springcloud\config\jwt\JwtAuthenticationTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtils' defined in file [E:\server\Git\MyGit\SchoolLife\SpringCloud\Common-7999\target\classes\net\mw\springcloud\utils\JwtTokenUtils.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Decode argument cannot be null.
+2022年-04月-20日 13:39:50.009 INFO  [restartedMain] o.a.c.c.StandardService - Stopping service [Tomcat]
+2022年-04月-20日 13:39:50.056 WARN  [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2022年-04月-20日 13:39:50.103 INFO  [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022年-04月-20日 13:39:50.197 ERROR [restartedMain] o.s.b.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at net.mw.springcloud.ProviderApplication.main(ProviderApplication.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:88) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:438) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:191) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'registration' defined in net.mw.springcloud.ProviderApplication: Unsatisfied dependency expressed through method 'registration' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationTokenFilter' defined in file [E:\server\Git\MyGit\SchoolLife\SpringCloud\Common-7999\target\classes\net\mw\springcloud\config\jwt\JwtAuthenticationTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtils' defined in file [E:\server\Git\MyGit\SchoolLife\SpringCloud\Common-7999\target\classes\net\mw\springcloud\utils\JwtTokenUtils.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Decode argument cannot be null.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:539) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:467) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:107) ~[spring-boot-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationTokenFilter' defined in file [E:\server\Git\MyGit\SchoolLife\SpringCloud\Common-7999\target\classes\net\mw\springcloud\config\jwt\JwtAuthenticationTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtils' defined in file [E:\server\Git\MyGit\SchoolLife\SpringCloud\Common-7999\target\classes\net\mw\springcloud\utils\JwtTokenUtils.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Decode argument cannot be null.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 58 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtils' defined in file [E:\server\Git\MyGit\SchoolLife\SpringCloud\Common-7999\target\classes\net\mw\springcloud\utils\JwtTokenUtils.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Decode argument cannot be null.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 72 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Decode argument cannot be null.
+	at io.jsonwebtoken.lang.Assert.notNull(Assert.java:82) ~[jjwt-api-0.10.6.jar:na]
+	at io.jsonwebtoken.io.ExceptionPropagatingDecoder.decode(ExceptionPropagatingDecoder.java:19) ~[jjwt-api-0.10.6.jar:na]
+	at net.mw.springcloud.utils.JwtTokenUtils.afterPropertiesSet(JwtTokenUtils.java:35) ~[classes/:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 83 common frames omitted
+2022年-04月-20日 13:43:02.937 ERROR [restartedMain] o.s.c.l.LoggingRebinder - Cannot set level: debu for 'net.mw'
+2022年-04月-20日 13:43:02.953 INFO  [restartedMain] n.m.s.ProviderApplication - The following profiles are active: dev
+2022年-04月-20日 13:43:06.270 WARN  [restartedMain] o.s.b.a.e.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'canteenDao' and 'net.mw.springcloud.dao.CanteenDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carDao' and 'net.mw.springcloud.dao.CarDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'classRoomDao' and 'net.mw.springcloud.dao.ClassRoomDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'deliveryOrderDao' and 'net.mw.springcloud.dao.DeliveryOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'dormitoryDao' and 'net.mw.springcloud.dao.DormitoryDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'dormitoryUserDao' and 'net.mw.springcloud.dao.DormitoryUserDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'foodDao' and 'net.mw.springcloud.dao.FoodDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'goodsDao' and 'net.mw.springcloud.dao.GoodsDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'noteDao' and 'net.mw.springcloud.dao.NoteDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'parkingDao' and 'net.mw.springcloud.dao.ParkingDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'parkingOrderDao' and 'net.mw.springcloud.dao.ParkingOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleOtherDao' and 'net.mw.springcloud.dao.RoleOtherDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'seatDao' and 'net.mw.springcloud.dao.SeatDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'seatOrderDao' and 'net.mw.springcloud.dao.SeatOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'vindicateDao' and 'net.mw.springcloud.dao.VindicateDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'actionPowerDao' and 'net.mw.springcloud.dao.ActionPowerDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleDao' and 'net.mw.springcloud.dao.RoleDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'net.mw.springcloud.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userRoleMapDao' and 'net.mw.springcloud.dao.UserRoleMapDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:43:06.462 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[net.mw.springcloud.dao]' package. Please check your configuration.
+2022年-04月-20日 13:43:06.646 INFO  [restartedMain] o.s.c.c.s.GenericScope - BeanFactory id=f5705622-8e4e-3671-b1c8-21830b25d059
+2022年-04月-20日 13:43:07.775 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022年-04月-20日 13:43:07.791 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2022年-04月-20日 13:43:07.791 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022年-04月-20日 13:43:08.150 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2022年-04月-20日 13:43:08.150 INFO  [restartedMain] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 5166 ms
+2022年-04月-20日 13:43:08.354 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022年-04月-20日 13:43:08.370 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022年-04月-20日 13:43:08.385 INFO  [restartedMain] c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6649d087
+2022年-04月-20日 13:43:11.663 INFO  [restartedMain] o.s.b.w.s.RegistrationBean - Filter jwtAuthenticationTokenFilter was not registered (disabled)
+2022年-04月-20日 13:43:20.086 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38099099, org.springframework.security.web.context.SecurityContextPersistenceFilter@4bdaa609, org.springframework.security.web.header.HeaderWriterFilter@56eec15d, org.springframework.security.web.authentication.logout.LogoutFilter@46ae960b, net.mw.springcloud.config.jwt.JwtAuthenticationTokenFilter@e97c1ba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f586519, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35d6f1a4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f82d366, org.springframework.security.web.session.SessionManagementFilter@4ab853d, org.springframework.security.web.access.ExceptionTranslationFilter@72ee0c36, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@370608a7]
+2022年-04月-20日 13:43:20.117 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022年-04月-20日 13:43:20.117 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022年-04月-20日 13:43:20.462 INFO  [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022年-04月-20日 13:43:21.229 WARN  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2022年-04月-20日 13:43:23.648 INFO  [restartedMain] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2022年-04月-20日 13:43:23.711 WARN  [restartedMain] o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022年-04月-20日 13:43:23.883 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+2022年-04月-20日 13:43:24.149 INFO  [restartedMain] o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022年-04月-20日 13:43:24.230 INFO  [restartedMain] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+2022年-04月-20日 13:43:24.449 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2022年-04月-20日 13:43:24.449 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2022年-04月-20日 13:43:24.715 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2022年-04月-20日 13:43:24.715 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2022年-04月-20日 13:43:25.216 INFO  [restartedMain] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 13:43:26.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Disable delta property : false
+2022年-04月-20日 13:43:26.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Single vip registry refresh property : null
+2022年-04月-20日 13:43:26.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Force full registry fetch : false
+2022年-04月-20日 13:43:26.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Application is null : false
+2022年-04月-20日 13:43:26.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Registered Applications size is zero : true
+2022年-04月-20日 13:43:26.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Application version is -1: true
+2022年-04月-20日 13:43:26.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Getting all instance registry info from the eureka server
+2022年-04月-20日 13:43:26.984 INFO  [restartedMain] c.n.d.DiscoveryClient - The response status is 200
+2022年-04月-20日 13:43:27.000 INFO  [restartedMain] c.n.d.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2022年-04月-20日 13:43:27.000 INFO  [restartedMain] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022年-04月-20日 13:43:27.000 INFO  [restartedMain] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1650433407000 with initial instances count: 2
+2022年-04月-20日 13:43:27.000 INFO  [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PROVIDER-USER with eureka with status UP
+2022年-04月-20日 13:43:27.000 INFO  [restartedMain] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1650433407000, current=UP, previous=STARTING]
+2022年-04月-20日 13:43:27.016 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user: registering service...
+2022年-04月-20日 13:43:27.078 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user - registration status: 204
+2022年-04月-20日 13:43:27.235 INFO  [restartedMain] c.a.d.p.DruidDataSource - {dataSource-1} inited
+2022年-04月-20日 13:43:29.422 INFO  [restartedMain] n.m.s.i.ContextRefreshedListener - 正在注入ActionPower数据!
+2022年-04月-20日 13:43:29.484 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022年-04月-20日 13:43:29.484 INFO  [restartedMain] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2022年-04月-20日 13:43:31.896 INFO  [restartedMain] n.m.s.ProviderApplication - Started ProviderApplication in 40.867 seconds (JVM running for 47.293)
+2022年-04月-20日 13:43:33.915 INFO  [RMI TCP Connection(1)-192.168.160.1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022年-04月-20日 13:43:33.915 INFO  [RMI TCP Connection(1)-192.168.160.1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022年-04月-20日 13:43:33.962 INFO  [RMI TCP Connection(1)-192.168.160.1] o.s.w.s.DispatcherServlet - Completed initialization in 47 ms
+2022年-04月-20日 13:43:34.071 INFO  [RMI TCP Connection(2)-192.168.160.1] o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://WESSI:8005/
+2022年-04月-20日 13:43:38.462 INFO  [RMI TCP Connection(2)-192.168.160.1] o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=provider-user, profiles=[dev], label=config, version=1b388f797d6538bb3a3bc63c3b704dc4ac886f4e, state=null
+2022年-04月-20日 13:48:26.851 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 13:49:36.867 ERROR [restartedMain] o.s.c.l.LoggingRebinder - Cannot set level: debu for 'net.mw'
+2022年-04月-20日 13:49:36.867 INFO  [restartedMain] n.m.s.ProviderApplication - The following profiles are active: dev
+2022年-04月-20日 13:49:40.297 WARN  [restartedMain] o.s.b.a.e.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022年-04月-20日 13:49:40.587 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'canteenDao' and 'net.mw.springcloud.dao.CanteenDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.587 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carDao' and 'net.mw.springcloud.dao.CarDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.587 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'classRoomDao' and 'net.mw.springcloud.dao.ClassRoomDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.587 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'deliveryOrderDao' and 'net.mw.springcloud.dao.DeliveryOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.587 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'dormitoryDao' and 'net.mw.springcloud.dao.DormitoryDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.587 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'dormitoryUserDao' and 'net.mw.springcloud.dao.DormitoryUserDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.587 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'foodDao' and 'net.mw.springcloud.dao.FoodDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.587 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'goodsDao' and 'net.mw.springcloud.dao.GoodsDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.587 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'noteDao' and 'net.mw.springcloud.dao.NoteDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.587 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'parkingDao' and 'net.mw.springcloud.dao.ParkingDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.603 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'parkingOrderDao' and 'net.mw.springcloud.dao.ParkingOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.603 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleOtherDao' and 'net.mw.springcloud.dao.RoleOtherDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.603 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'seatDao' and 'net.mw.springcloud.dao.SeatDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.603 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'seatOrderDao' and 'net.mw.springcloud.dao.SeatOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.603 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'vindicateDao' and 'net.mw.springcloud.dao.VindicateDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.603 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'actionPowerDao' and 'net.mw.springcloud.dao.ActionPowerDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.603 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleDao' and 'net.mw.springcloud.dao.RoleDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.603 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'net.mw.springcloud.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.603 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userRoleMapDao' and 'net.mw.springcloud.dao.UserRoleMapDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:49:40.603 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[net.mw.springcloud.dao]' package. Please check your configuration.
+2022年-04月-20日 13:49:40.975 INFO  [restartedMain] o.s.c.c.s.GenericScope - BeanFactory id=f5705622-8e4e-3671-b1c8-21830b25d059
+2022年-04月-20日 13:49:43.847 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022年-04月-20日 13:49:43.893 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2022年-04月-20日 13:49:43.893 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022年-04月-20日 13:49:44.397 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2022年-04月-20日 13:49:44.397 INFO  [restartedMain] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 7499 ms
+2022年-04月-20日 13:49:57.903 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022年-04月-20日 13:49:57.903 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022年-04月-20日 13:49:57.950 INFO  [restartedMain] c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@23298444
+2022年-04月-20日 13:50:02.026 INFO  [restartedMain] o.s.b.w.s.RegistrationBean - Filter jwtAuthenticationTokenFilter was not registered (disabled)
+2022年-04月-20日 13:50:10.933 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@591abd64, org.springframework.security.web.context.SecurityContextPersistenceFilter@38479ef0, org.springframework.security.web.header.HeaderWriterFilter@6e53306b, org.springframework.security.web.authentication.logout.LogoutFilter@59d3d956, net.mw.springcloud.config.jwt.JwtAuthenticationTokenFilter@4488d2ba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51c05513, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b7af815, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2db93915, org.springframework.security.web.session.SessionManagementFilter@5b7beadc, org.springframework.security.web.access.ExceptionTranslationFilter@2cd12284, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e88fca3]
+2022年-04月-20日 13:50:10.964 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022年-04月-20日 13:50:10.964 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022年-04月-20日 13:50:11.314 INFO  [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022年-04月-20日 13:50:12.844 WARN  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2022年-04月-20日 13:50:15.460 INFO  [restartedMain] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2022年-04月-20日 13:50:15.507 WARN  [restartedMain] o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022年-04月-20日 13:50:15.632 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+2022年-04月-20日 13:50:16.031 INFO  [restartedMain] o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022年-04月-20日 13:50:16.094 INFO  [restartedMain] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+2022年-04月-20日 13:50:16.329 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2022年-04月-20日 13:50:16.329 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2022年-04月-20日 13:50:16.595 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2022年-04月-20日 13:50:16.595 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2022年-04月-20日 13:50:17.174 INFO  [restartedMain] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 13:50:18.830 INFO  [restartedMain] c.n.d.DiscoveryClient - Disable delta property : false
+2022年-04月-20日 13:50:18.830 INFO  [restartedMain] c.n.d.DiscoveryClient - Single vip registry refresh property : null
+2022年-04月-20日 13:50:18.830 INFO  [restartedMain] c.n.d.DiscoveryClient - Force full registry fetch : false
+2022年-04月-20日 13:50:18.830 INFO  [restartedMain] c.n.d.DiscoveryClient - Application is null : false
+2022年-04月-20日 13:50:18.830 INFO  [restartedMain] c.n.d.DiscoveryClient - Registered Applications size is zero : true
+2022年-04月-20日 13:50:18.830 INFO  [restartedMain] c.n.d.DiscoveryClient - Application version is -1: true
+2022年-04月-20日 13:50:18.830 INFO  [restartedMain] c.n.d.DiscoveryClient - Getting all instance registry info from the eureka server
+2022年-04月-20日 13:50:19.033 INFO  [restartedMain] c.n.d.DiscoveryClient - The response status is 200
+2022年-04月-20日 13:50:19.033 INFO  [restartedMain] c.n.d.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2022年-04月-20日 13:50:19.055 INFO  [restartedMain] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022年-04月-20日 13:50:19.055 INFO  [restartedMain] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1650433819055 with initial instances count: 3
+2022年-04月-20日 13:50:19.055 INFO  [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PROVIDER-USER with eureka with status UP
+2022年-04月-20日 13:50:19.055 INFO  [restartedMain] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1650433819055, current=UP, previous=STARTING]
+2022年-04月-20日 13:50:19.071 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user: registering service...
+2022年-04月-20日 13:50:19.137 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user - registration status: 204
+2022年-04月-20日 13:50:19.216 INFO  [restartedMain] c.a.d.p.DruidDataSource - {dataSource-1} inited
+2022年-04月-20日 13:50:20.296 INFO  [restartedMain] n.m.s.i.ContextRefreshedListener - 正在注入ActionPower数据!
+2022年-04月-20日 13:50:20.390 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022年-04月-20日 13:50:20.390 INFO  [restartedMain] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2022年-04月-20日 13:50:22.864 INFO  [restartedMain] n.m.s.ProviderApplication - Started ProviderApplication in 57.751 seconds (JVM running for 65.314)
+2022年-04月-20日 13:50:23.192 INFO  [RMI TCP Connection(4)-192.168.160.1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022年-04月-20日 13:50:23.192 INFO  [RMI TCP Connection(4)-192.168.160.1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022年-04月-20日 13:50:23.215 INFO  [RMI TCP Connection(4)-192.168.160.1] o.s.w.s.DispatcherServlet - Completed initialization in 23 ms
+2022年-04月-20日 13:50:23.340 INFO  [RMI TCP Connection(3)-192.168.160.1] o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://WESSI:8005/
+2022年-04月-20日 13:50:28.038 INFO  [RMI TCP Connection(3)-192.168.160.1] o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=provider-user, profiles=[dev], label=config, version=1b388f797d6538bb3a3bc63c3b704dc4ac886f4e, state=null
+2022年-04月-20日 13:51:06.872 INFO  [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PROVIDER-USER with eureka with status DOWN
+2022年-04月-20日 13:51:06.872 WARN  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1650433866872, current=DOWN, previous=UP]
+2022年-04月-20日 13:51:06.888 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user: registering service...
+2022年-04月-20日 13:51:06.888 INFO  [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022年-04月-20日 13:51:06.903 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user - registration status: 204
+2022年-04月-20日 13:51:06.903 INFO  [SpringContextShutdownHook] c.a.d.p.DruidDataSource - {dataSource-1} closing ...
+2022年-04月-20日 13:51:06.950 INFO  [SpringContextShutdownHook] c.a.d.p.DruidDataSource - {dataSource-1} closed
+2022年-04月-20日 13:51:06.950 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+2022年-04月-20日 13:51:09.970 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Unregistering ...
+2022年-04月-20日 13:51:09.985 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user - deregister  status: 200
+2022年-04月-20日 13:51:10.016 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient
+2022年-04月-20日 13:57:56.978 ERROR [restartedMain] o.s.c.l.LoggingRebinder - Cannot set level: debu for 'net.mw'
+2022年-04月-20日 13:57:56.978 INFO  [restartedMain] n.m.s.ProviderApplication - The following profiles are active: dev
+2022年-04月-20日 13:58:01.155 WARN  [restartedMain] o.s.b.a.e.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022年-04月-20日 13:58:01.437 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'canteenDao' and 'net.mw.springcloud.dao.CanteenDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.437 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carDao' and 'net.mw.springcloud.dao.CarDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.437 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'classRoomDao' and 'net.mw.springcloud.dao.ClassRoomDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.437 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'deliveryOrderDao' and 'net.mw.springcloud.dao.DeliveryOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.437 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'dormitoryDao' and 'net.mw.springcloud.dao.DormitoryDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.437 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'dormitoryUserDao' and 'net.mw.springcloud.dao.DormitoryUserDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.437 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'foodDao' and 'net.mw.springcloud.dao.FoodDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'goodsDao' and 'net.mw.springcloud.dao.GoodsDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'noteDao' and 'net.mw.springcloud.dao.NoteDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'parkingDao' and 'net.mw.springcloud.dao.ParkingDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'parkingOrderDao' and 'net.mw.springcloud.dao.ParkingOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleOtherDao' and 'net.mw.springcloud.dao.RoleOtherDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'seatDao' and 'net.mw.springcloud.dao.SeatDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'seatOrderDao' and 'net.mw.springcloud.dao.SeatOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'vindicateDao' and 'net.mw.springcloud.dao.VindicateDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'actionPowerDao' and 'net.mw.springcloud.dao.ActionPowerDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleDao' and 'net.mw.springcloud.dao.RoleDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'net.mw.springcloud.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userRoleMapDao' and 'net.mw.springcloud.dao.UserRoleMapDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 13:58:01.453 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[net.mw.springcloud.dao]' package. Please check your configuration.
+2022年-04月-20日 13:58:01.736 INFO  [restartedMain] o.s.c.c.s.GenericScope - BeanFactory id=59d7ffc5-fd1d-3739-8d10-077060adb2b8
+2022年-04月-20日 13:58:04.400 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022年-04月-20日 13:58:04.431 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2022年-04月-20日 13:58:04.431 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022年-04月-20日 13:58:04.760 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2022年-04月-20日 13:58:04.775 INFO  [restartedMain] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 7766 ms
+2022年-04月-20日 13:58:23.368 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022年-04月-20日 13:58:23.368 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022年-04月-20日 13:58:23.384 INFO  [restartedMain] c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2bc5d915
+2022年-04月-20日 13:58:26.917 INFO  [restartedMain] o.s.b.w.s.RegistrationBean - Filter jwtAuthenticationTokenFilter was not registered (disabled)
+2022年-04月-20日 13:58:37.166 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a90e0ac, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e9c26aa, org.springframework.security.web.header.HeaderWriterFilter@600ed2ae, org.springframework.security.web.authentication.logout.LogoutFilter@53955d25, net.mw.springcloud.config.jwt.JwtAuthenticationTokenFilter@69091bef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25999c5a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a6c891e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cb080b5, org.springframework.security.web.session.SessionManagementFilter@39e97add, org.springframework.security.web.access.ExceptionTranslationFilter@573ea81b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68931630]
+2022年-04月-20日 13:58:37.198 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022年-04月-20日 13:58:37.198 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022年-04月-20日 13:58:37.464 INFO  [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022年-04月-20日 13:58:38.329 WARN  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2022年-04月-20日 13:58:41.096 INFO  [restartedMain] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2022年-04月-20日 13:58:41.159 WARN  [restartedMain] o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022年-04月-20日 13:58:41.316 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+2022年-04月-20日 13:58:41.644 INFO  [restartedMain] o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022年-04月-20日 13:58:41.739 INFO  [restartedMain] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+2022年-04月-20日 13:58:41.994 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2022年-04月-20日 13:58:41.994 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2022年-04月-20日 13:58:42.307 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2022年-04月-20日 13:58:42.307 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2022年-04月-20日 13:58:42.973 INFO  [restartedMain] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 13:58:44.717 INFO  [restartedMain] c.n.d.DiscoveryClient - Disable delta property : false
+2022年-04月-20日 13:58:44.717 INFO  [restartedMain] c.n.d.DiscoveryClient - Single vip registry refresh property : null
+2022年-04月-20日 13:58:44.717 INFO  [restartedMain] c.n.d.DiscoveryClient - Force full registry fetch : false
+2022年-04月-20日 13:58:44.717 INFO  [restartedMain] c.n.d.DiscoveryClient - Application is null : false
+2022年-04月-20日 13:58:44.717 INFO  [restartedMain] c.n.d.DiscoveryClient - Registered Applications size is zero : true
+2022年-04月-20日 13:58:44.717 INFO  [restartedMain] c.n.d.DiscoveryClient - Application version is -1: true
+2022年-04月-20日 13:58:44.717 INFO  [restartedMain] c.n.d.DiscoveryClient - Getting all instance registry info from the eureka server
+2022年-04月-20日 13:58:44.967 INFO  [restartedMain] c.n.d.DiscoveryClient - The response status is 200
+2022年-04月-20日 13:58:44.982 INFO  [restartedMain] c.n.d.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2022年-04月-20日 13:58:44.982 INFO  [restartedMain] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022年-04月-20日 13:58:44.998 INFO  [restartedMain] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1650434324982 with initial instances count: 2
+2022年-04月-20日 13:58:44.998 INFO  [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PROVIDER-USER with eureka with status UP
+2022年-04月-20日 13:58:44.998 INFO  [restartedMain] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1650434324998, current=UP, previous=STARTING]
+2022年-04月-20日 13:58:44.998 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user: registering service...
+2022年-04月-20日 13:58:45.092 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user - registration status: 204
+2022年-04月-20日 13:58:45.139 INFO  [restartedMain] c.a.d.p.DruidDataSource - {dataSource-1} inited
+2022年-04月-20日 13:58:46.273 INFO  [restartedMain] n.m.s.i.ContextRefreshedListener - 正在注入ActionPower数据!
+2022年-04月-20日 13:58:46.351 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022年-04月-20日 13:58:46.351 INFO  [restartedMain] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2022年-04月-20日 13:58:49.646 INFO  [restartedMain] n.m.s.ProviderApplication - Started ProviderApplication in 64.641 seconds (JVM running for 71.256)
+2022年-04月-20日 13:58:51.716 INFO  [RMI TCP Connection(5)-192.168.160.1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022年-04月-20日 13:58:51.716 INFO  [RMI TCP Connection(5)-192.168.160.1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022年-04月-20日 13:58:51.747 INFO  [RMI TCP Connection(5)-192.168.160.1] o.s.w.s.DispatcherServlet - Completed initialization in 31 ms
+2022年-04月-20日 13:58:51.903 INFO  [RMI TCP Connection(6)-192.168.160.1] o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://WESSI:8005/
+2022年-04月-20日 13:58:57.253 INFO  [RMI TCP Connection(6)-192.168.160.1] o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=provider-user, profiles=[dev], label=config, version=1b388f797d6538bb3a3bc63c3b704dc4ac886f4e, state=null
+2022年-04月-20日 13:59:50.903 INFO  [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PROVIDER-USER with eureka with status DOWN
+2022年-04月-20日 13:59:50.903 WARN  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1650434390903, current=DOWN, previous=UP]
+2022年-04月-20日 13:59:50.903 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user: registering service...
+2022年-04月-20日 13:59:50.919 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user - registration status: 204
+2022年-04月-20日 13:59:50.919 INFO  [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022年-04月-20日 13:59:50.919 INFO  [SpringContextShutdownHook] c.a.d.p.DruidDataSource - {dataSource-1} closing ...
+2022年-04月-20日 13:59:50.934 INFO  [SpringContextShutdownHook] c.a.d.p.DruidDataSource - {dataSource-1} closed
+2022年-04月-20日 13:59:50.934 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+2022年-04月-20日 13:59:53.946 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Unregistering ...
+2022年-04月-20日 13:59:53.961 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user - deregister  status: 200
+2022年-04月-20日 13:59:54.008 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient
+2022年-04月-20日 14:01:05.596 ERROR [restartedMain] o.s.c.l.LoggingRebinder - Cannot set level: debu for 'net.mw'
+2022年-04月-20日 14:01:05.611 INFO  [restartedMain] n.m.s.ProviderApplication - The following profiles are active: dev
+2022年-04月-20日 14:01:08.981 WARN  [restartedMain] o.s.b.a.e.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'canteenDao' and 'net.mw.springcloud.dao.CanteenDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'carDao' and 'net.mw.springcloud.dao.CarDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'classRoomDao' and 'net.mw.springcloud.dao.ClassRoomDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'deliveryOrderDao' and 'net.mw.springcloud.dao.DeliveryOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'dormitoryDao' and 'net.mw.springcloud.dao.DormitoryDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'dormitoryUserDao' and 'net.mw.springcloud.dao.DormitoryUserDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'foodDao' and 'net.mw.springcloud.dao.FoodDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'goodsDao' and 'net.mw.springcloud.dao.GoodsDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'noteDao' and 'net.mw.springcloud.dao.NoteDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'parkingDao' and 'net.mw.springcloud.dao.ParkingDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'parkingOrderDao' and 'net.mw.springcloud.dao.ParkingOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleOtherDao' and 'net.mw.springcloud.dao.RoleOtherDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'seatDao' and 'net.mw.springcloud.dao.SeatDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'seatOrderDao' and 'net.mw.springcloud.dao.SeatOrderDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'vindicateDao' and 'net.mw.springcloud.dao.VindicateDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'actionPowerDao' and 'net.mw.springcloud.dao.ActionPowerDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'roleDao' and 'net.mw.springcloud.dao.RoleDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userDao' and 'net.mw.springcloud.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userRoleMapDao' and 'net.mw.springcloud.dao.UserRoleMapDao' mapperInterface. Bean already defined with the same name!
+2022年-04月-20日 14:01:09.200 WARN  [restartedMain] o.m.s.m.ClassPathMapperScanner - No MyBatis mapper was found in '[net.mw.springcloud.dao]' package. Please check your configuration.
+2022年-04月-20日 14:01:09.403 INFO  [restartedMain] o.s.c.c.s.GenericScope - BeanFactory id=bf60ef20-a89e-349e-9739-aef9c3a700a0
+2022年-04月-20日 14:01:11.766 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2022年-04月-20日 14:01:11.797 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2022年-04月-20日 14:01:11.797 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022年-04月-20日 14:01:12.220 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2022年-04月-20日 14:01:12.220 INFO  [restartedMain] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 6562 ms
+2022年-04月-20日 14:01:15.435 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022年-04月-20日 14:01:15.435 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022年-04月-20日 14:01:15.466 INFO  [restartedMain] c.n.c.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@8e2cec6
+2022年-04月-20日 14:01:18.819 INFO  [restartedMain] o.s.b.w.s.RegistrationBean - Filter jwtAuthenticationTokenFilter was not registered (disabled)
+2022年-04月-20日 14:01:27.037 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9b44a84, org.springframework.security.web.context.SecurityContextPersistenceFilter@568e12d, org.springframework.security.web.header.HeaderWriterFilter@1c5ecb9c, org.springframework.security.web.authentication.logout.LogoutFilter@4194205f, net.mw.springcloud.config.jwt.JwtAuthenticationTokenFilter@7eb4369, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b2aee19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c3c6e41, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e1ff500, org.springframework.security.web.session.SessionManagementFilter@37231823, org.springframework.security.web.access.ExceptionTranslationFilter@122b4a6f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@255d9f8a]
+2022年-04月-20日 14:01:27.052 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022年-04月-20日 14:01:27.052 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022年-04月-20日 14:01:27.334 INFO  [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022年-04月-20日 14:01:28.147 WARN  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2022年-04月-20日 14:01:30.619 INFO  [restartedMain] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2022年-04月-20日 14:01:30.666 WARN  [restartedMain] o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022年-04月-20日 14:01:30.855 INFO  [restartedMain] o.s.b.a.e.w.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+2022年-04月-20日 14:01:31.152 INFO  [restartedMain] o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+2022年-04月-20日 14:01:31.215 INFO  [restartedMain] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+2022年-04月-20日 14:01:31.449 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2022年-04月-20日 14:01:31.449 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2022年-04月-20日 14:01:31.701 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2022年-04月-20日 14:01:31.701 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2022年-04月-20日 14:01:32.281 INFO  [restartedMain] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 14:01:33.924 INFO  [restartedMain] c.n.d.DiscoveryClient - Disable delta property : false
+2022年-04月-20日 14:01:33.924 INFO  [restartedMain] c.n.d.DiscoveryClient - Single vip registry refresh property : null
+2022年-04月-20日 14:01:33.924 INFO  [restartedMain] c.n.d.DiscoveryClient - Force full registry fetch : false
+2022年-04月-20日 14:01:33.924 INFO  [restartedMain] c.n.d.DiscoveryClient - Application is null : false
+2022年-04月-20日 14:01:33.924 INFO  [restartedMain] c.n.d.DiscoveryClient - Registered Applications size is zero : true
+2022年-04月-20日 14:01:33.924 INFO  [restartedMain] c.n.d.DiscoveryClient - Application version is -1: true
+2022年-04月-20日 14:01:33.924 INFO  [restartedMain] c.n.d.DiscoveryClient - Getting all instance registry info from the eureka server
+2022年-04月-20日 14:01:34.143 INFO  [restartedMain] c.n.d.DiscoveryClient - The response status is 200
+2022年-04月-20日 14:01:34.159 INFO  [restartedMain] c.n.d.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2022年-04月-20日 14:01:34.159 INFO  [restartedMain] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022年-04月-20日 14:01:34.174 INFO  [restartedMain] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1650434494159 with initial instances count: 2
+2022年-04月-20日 14:01:34.174 INFO  [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry - Registering application PROVIDER-USER with eureka with status UP
+2022年-04月-20日 14:01:34.174 INFO  [restartedMain] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1650434494174, current=UP, previous=STARTING]
+2022年-04月-20日 14:01:34.174 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user: registering service...
+2022年-04月-20日 14:01:34.270 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user - registration status: 204
+2022年-04月-20日 14:01:34.317 INFO  [restartedMain] c.a.d.p.DruidDataSource - {dataSource-1} inited
+2022年-04月-20日 14:01:35.335 INFO  [restartedMain] n.m.s.i.ContextRefreshedListener - 正在注入ActionPower数据!
+2022年-04月-20日 14:01:35.413 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2022年-04月-20日 14:01:35.413 INFO  [restartedMain] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2022年-04月-20日 14:01:38.029 INFO  [restartedMain] n.m.s.ProviderApplication - Started ProviderApplication in 44.326 seconds (JVM running for 50.962)
+2022年-04月-20日 14:01:42.092 INFO  [RMI TCP Connection(3)-192.168.160.1] o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://WESSI:8005/
+2022年-04月-20日 14:01:50.225 INFO  [RMI TCP Connection(3)-192.168.160.1] o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=provider-user, profiles=[dev], label=config, version=1b388f797d6538bb3a3bc63c3b704dc4ac886f4e, state=null
+2022年-04月-20日 14:01:50.272 INFO  [RMI TCP Connection(5)-192.168.160.1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022年-04月-20日 14:01:50.272 INFO  [RMI TCP Connection(5)-192.168.160.1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022年-04月-20日 14:01:50.303 INFO  [RMI TCP Connection(5)-192.168.160.1] o.s.w.s.DispatcherServlet - Completed initialization in 31 ms
+2022年-04月-20日 14:02:42.530 ERROR [http-nio-8081-exec-1] c.a.d.p.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school_life?serverTimezone=GMT%2B8&&useUnicode=true&&characterEncoding=utf-8, jdbcUrl : jdbc:mysql://localhost:3306/school_life?serverTimezone=GMT%2B8&&useUnicode=true&&characterEncoding=utf-8, lastPacketReceivedIdleMillis : 67171
+2022年-04月-20日 14:03:58.633 ERROR [http-nio-8081-exec-3] c.a.d.p.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school_life?serverTimezone=GMT%2B8&&useUnicode=true&&characterEncoding=utf-8, jdbcUrl : jdbc:mysql://localhost:3306/school_life?serverTimezone=GMT%2B8&&useUnicode=true&&characterEncoding=utf-8, lastPacketReceivedIdleMillis : 70941
+2022年-04月-20日 14:05:03.908 ERROR [http-nio-8081-exec-6] c.a.d.p.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school_life?serverTimezone=GMT%2B8&&useUnicode=true&&characterEncoding=utf-8, jdbcUrl : jdbc:mysql://localhost:3306/school_life?serverTimezone=GMT%2B8&&useUnicode=true&&characterEncoding=utf-8, lastPacketReceivedIdleMillis : 64773
+2022年-04月-20日 14:06:33.956 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 14:11:33.963 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 14:16:33.972 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 14:21:33.986 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 14:24:25.432 ERROR [http-nio-8081-exec-8] c.a.d.p.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/school_life?serverTimezone=GMT%2B8&&useUnicode=true&&characterEncoding=utf-8, jdbcUrl : jdbc:mysql://localhost:3306/school_life?serverTimezone=GMT%2B8&&useUnicode=true&&characterEncoding=utf-8, lastPacketReceivedIdleMillis : 1129883
+2022年-04月-20日 14:26:33.992 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 14:31:34.008 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 14:36:34.010 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 14:41:34.017 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 14:46:34.033 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 14:51:34.038 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2022年-04月-20日 14:56:12.916 INFO  [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PROVIDER-USER with eureka with status DOWN
+2022年-04月-20日 14:56:12.916 WARN  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1650437772916, current=DOWN, previous=UP]
+2022年-04月-20日 14:56:12.916 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user: registering service...
+2022年-04月-20日 14:56:12.932 INFO  [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022年-04月-20日 14:56:12.948 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user - registration status: 204
+2022年-04月-20日 14:56:12.948 INFO  [SpringContextShutdownHook] c.a.d.p.DruidDataSource - {dataSource-1} closing ...
+2022年-04月-20日 14:56:12.948 INFO  [SpringContextShutdownHook] c.a.d.p.DruidDataSource - {dataSource-1} closed
+2022年-04月-20日 14:56:12.963 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+2022年-04月-20日 14:56:15.975 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Unregistering ...
+2022年-04月-20日 14:56:15.991 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - DiscoveryClient_PROVIDER-USER/provider-user - deregister  status: 200
+2022年-04月-20日 14:56:16.010 INFO  [SpringContextShutdownHook] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient

@@ -16,6 +16,7 @@
         <module>Common-7999</module>
         <module>Gateway</module>
         <module>Provider</module>
+        <module>Hystrix</module>
     </modules>
     <name>SpringCloud</name>
     <packaging>pom</packaging>

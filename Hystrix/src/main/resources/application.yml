@@ -1,0 +1,16 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: hystrix-dashboard
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "localhost"
+eureka:
+  instance:
+    instance-id: hystrix-dashboard
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone:  http://localhost:8000/eureka/

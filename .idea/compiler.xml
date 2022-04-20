@@ -7,13 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="PoVo" />
-        <module name="Eureka-8002" />
-        <module name="Eureka-8001" />
-        <module name="Eureka-8000" />
-        <module name="Config-8005" />
+        <module name="Hystrix" />
+        <module name="Provider-User-8082" />
         <module name="Common-7999" />
+        <module name="Eureka-8001" />
+        <module name="Eureka-8002" />
+        <module name="Config-8005" />
+        <module name="Eureka-8000" />
         <module name="Gateway" />
+        <module name="Provider-User-8081" />
+        <module name="PoVo" />
       </profile>
       <profile name="Annotation profile for SpringCloud" enabled="true">
         <sourceOutputDir name="../../Provider-User-8082/target/generated-sources/annotations" />
@@ -22,5 +25,8 @@
         <module name="springcloud-provider-user-8082" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spingcloud-provider-user-8081" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
