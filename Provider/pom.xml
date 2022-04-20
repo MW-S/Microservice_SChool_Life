@@ -10,7 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>Provider-User-8081</module>
-        <module>Provider-User-8082</module>
+        <module>Provider-Entertainment-8082</module>
+        <module>Provider-Diet-8083</module>
+        <module>Provider-Place-8084</module>
+        <module>Provider-Traffic-8085</module>
+        <module>Provider-Goods-8086</module>
     </modules>
     <artifactId>Provider</artifactId>
     <name>Provider</name>

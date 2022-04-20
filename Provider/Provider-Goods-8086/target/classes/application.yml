@@ -1,0 +1,11 @@
+server:
+  port: 8086
+
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"

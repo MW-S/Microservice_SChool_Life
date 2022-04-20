@@ -14,6 +14,36 @@ spring:
             - Path=/user/**
           filters:
             - StripPrefix=1
+        - id: provider-entertainment-route    # 指定路由的唯一标识
+          uri: lb://provider-entertainment # 指定路由服务的地址
+          predicates:  # 指定路由的规则
+            - Path=/entertainment/**
+          filters:
+            - StripPrefix=1
+        - id: provider-diet-route    # 指定路由的唯一标识
+          uri: lb://provider-diet # 指定路由服务的地址
+          predicates:  # 指定路由的规则
+            - Path=/diet/**
+          filters:
+            - StripPrefix=1
+        - id: provider-place-route    # 指定路由的唯一标识
+          uri: lb://provider-place # 指定路由服务的地址
+          predicates:  # 指定路由的规则
+            - Path=/place/**
+          filters:
+            - StripPrefix=1
+        - id: provider-traffic-route    # 指定路由的唯一标识
+          uri: lb://provider-traffic # 指定路由服务的地址
+          predicates:  # 指定路由的规则
+            - Path=/traffic/**
+          filters:
+            - StripPrefix=1
+        - id: provider-goods-route    # 指定路由的唯一标识
+          uri: lb://provider-goods # 指定路由服务的地址
+          predicates:  # 指定路由的规则
+            - Path=/goods/**
+          filters:
+            - StripPrefix=1
       default-filters:
         - name: Hystrix
           args:
