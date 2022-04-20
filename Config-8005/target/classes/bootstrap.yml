@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config  # 应用名称
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/mkingdragon/SpringCloud_Config.git #配置文件所在仓库
+          username: 1227992942@qq.com #登录账号
+          password: a1227992942 #登录密码
+          default-label: config #配置文件分支
+          search-paths: config  #配置文件所在根目录

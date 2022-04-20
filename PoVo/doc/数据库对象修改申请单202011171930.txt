@@ -1,0 +1,18 @@
+#创建数据库
+create database if not exists springcloud character set utf8 collate utf8_general_ci;
+
+use springcloud;
+#判断是否存在数据库表，若存在则先删除再重建
+drop table if exists user;
+
+#重建数据库表
+create table user(
+id bigint(16) unsigned not null auto_increment comment '用户ID',
+name varchar(64) character set utf8 collate utf8_general_ci null comment '昵称',
+account varchar(64) character set utf8 collate utf8_general_ci not null comment '账号',
+password varchar(64) character set utf8 collate utf8_general_ci not null comment '密码',
+
+create_gtm DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+update_gtm DATETIME NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+primary key(id)
+)ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=UTF8 comment '用户表';
