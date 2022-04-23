@@ -16,7 +16,6 @@ public class ProviderUserApplication {
     public static void  main(String[] args){
         SpringApplication.run( ProviderUserApplication.class, args);
     }
-
     @Bean
     public FilterRegistrationBean registration(JwtAuthenticationTokenFilter filter) {
         FilterRegistrationBean registration = new FilterRegistrationBean(filter);

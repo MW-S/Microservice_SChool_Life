@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
 import io.jsonwebtoken.lang.Collections;
 import net.mw.springcloud.dao.CarDao;
+import net.mw.springcloud.easy.pr.util.Util;
 import net.mw.springcloud.pojo.po.CarPO;
 import net.mw.springcloud.pojo.po.UserPO;
 import net.mw.springcloud.pojo.vo.CarVO;
@@ -15,7 +16,9 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -37,7 +40,52 @@ public class CarServiceImpl extends ServiceImpl<CarDao, CarPO> implements CarSer
 	@Autowired
 	private CarService dao;
 
-	
+
+	@Override
+	public ResultMessage getCode(MultipartFile image) {
+		logger.trace("进入getCode方法");
+		ResultMessage rs = new ResultMessage();
+		try {
+			if(!ObjectUtils.allNotNull(image) || image.isEmpty()){
+				logger.debug("CurrentUser must not null!");
+				throw new IllegalArgumentException("CurrentUser must not null!");
+			}
+			if(!image.getContentType().contains("image")){
+				logger.debug("File must image!");
+				throw new IllegalArgumentException("File must image!");
+			}
+			String fileName = image.getOriginalFilename();
+			File dest = new File(new File("tmp").getAbsolutePath()+ "/" + fileName);
+			String number = Util.recognize(dest.getAbsolutePath());
+			if(ObjectUtils.allNotNull(number)){
+				Map<String,Object> data = new HashMap<String,Object>();
+				CarPO car = new CarPO();
+				car.setNumber(number);
+				if(dest.exists()){
+					dest.delete();
+				}
+				data.put("code", number);
+				data.put("state", dao.save(car));
+				rs.setData(data);
+				rs.setCode(1L);
+				rs.setMsg("识别成功!");
+			}else{
+				rs.setCode(2L);
+				rs.setMsg("识别失败!");
+			}
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+			rs.setMsg("参数不正确");
+			rs.setCode(2L);
+		} catch (Exception e) {
+			e.printStackTrace();
+			rs.setMsg("识别失败");
+			rs.setCode(0L);
+		}
+		logger.trace("退出 getCode 方法");
+		return rs;
+	}
+
 	@Override
 	public ResultMessage getList(PageRequest page, UserPO user) {
 		logger.trace("进入getList方法");

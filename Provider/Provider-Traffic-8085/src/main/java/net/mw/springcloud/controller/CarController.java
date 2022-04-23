@@ -12,6 +12,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 
 /**
@@ -32,8 +33,8 @@ public class CarController {
     private CarService service;
 
     @GetMapping(value = "/getList")
-    public ResultMessage getList(@RequestParam(value="page", required=false) Integer page,
-			@RequestParam(value="size",required=false) Integer size
+	public ResultMessage getList(@RequestParam(value="page", required=false) Integer page,
+								 @RequestParam(value="size",required=false) Integer size
 			, @CurrentUser UserPO user){
 		logger.trace("进入getList方法");
 		PageRequest pageVo = null;
@@ -43,7 +44,7 @@ public class CarController {
 		ResultMessage rs=service.getList(pageVo, user);
 		logger.trace("退出getList方法");
 		return rs;
-    }
+	}
     
     @GetMapping(value = "/getById")
     public ResultMessage getById(@RequestParam("id") String id){
@@ -71,4 +72,12 @@ public class CarController {
 		logger.trace("退出 delByIds 方法");
 		return rs;
     }
+
+	@PostMapping(value = "/recognize")
+	public ResultMessage recognize(@RequestParam("image") MultipartFile image){
+		logger.trace("进入recognize方法");
+		ResultMessage rs=service.getCode(image);
+		logger.trace("退出recognize方法");
+		return rs;
+	}
 }

@@ -10,15 +10,16 @@
         <module name="Provider-Entertainment-8082" />
         <module name="Eureka-8000" />
         <module name="Provider-Goods-8086" />
-        <module name="Provider-Place-8084" />
+        <module name="Provider-Traffic-8085" />
         <module name="Eureka-8002" />
         <module name="Eureka-8001" />
         <module name="Provider-Diet-8083" />
         <module name="Common-7999" />
+        <module name="EasyPR-Java" />
         <module name="Gateway" />
+        <module name="Provider-Place-8084" />
         <module name="Provider-User-8081" />
         <module name="Config-8005" />
-        <module name="Provider-Traffic-8085" />
         <module name="Hystrix" />
         <module name="PoVo" />
       </profile>
@@ -30,6 +31,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="EasyPR-Java" target="1.8" />
       <module name="Provider-Entertain-8082" target="1.8" />
       <module name="spingcloud-provider-user-8081" target="1.8" />
     </bytecodeTargetLevel>

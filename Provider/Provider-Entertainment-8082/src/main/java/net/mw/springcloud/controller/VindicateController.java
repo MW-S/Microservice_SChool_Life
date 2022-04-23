@@ -1,5 +1,6 @@
 package net.mw.springcloud.controller;
 
+import net.mw.springcloud.Helper.SensitiveWordFilterHelper;
 import net.mw.springcloud.pojo.po.VindicatePO;
 import net.mw.springcloud.pojo.vo.VindicateVO;
 import net.mw.springcloud.service.VindicateService;
@@ -21,8 +22,20 @@ public class VindicateController extends BaseController<VindicateService, Vindic
      */
     private static Logger logger = LogManager.getLogger(VindicateController.class);
 
+    /**
+     * 敏感词过滤工具
+     */
+    private static SensitiveWordFilterHelper sw ;
+    static {
+        logger.info("加载敏感词过滤工具");
+        sw = new SensitiveWordFilterHelper();
+        sw.InitializationWork();
+        logger.info("敏感词过滤工具加载完毕！");
+    }
+
     @PostMapping(value = "/save")
     public ResultMessage save(@RequestBody VindicateVO vo, @CurrentUser UserPO currentUser){
+        vo.setContent(sw.filterInfo(vo.getContent()));
         return this.save(vo);
     }
 }

@@ -59,15 +59,21 @@ management:
     web:
       exposure:
         include: hystrix.stream
-# hystrix 信号量隔离，3秒后自动超时
+
+
 hystrix:
   command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000 #默认连接1s超时，改为3s
     fallbackcmd:
       execution:
         isolation:
           strategy: SEMAPHORE
           thread:
-            timeoutInMilliseconds: 3000
+            timeoutInMilliseconds: 3000 # hystrix 信号量隔离，3秒后自动超时
 eureka:
   instance:
     instance-id: gateway

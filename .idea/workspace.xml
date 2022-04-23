@@ -4,98 +4,17 @@
     <list default="true" id="a7896e09-0637-4255-8f99-0f44bf121a2e" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config-8005/src/main/java/net/mw/springcloud/ConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Config-8005/src/main/java/net/mw/springcloud/ConfigApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config-8005/target/classes/net/mw/springcloud/ConfigApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Config-8005/target/classes/net/mw/springcloud/ConfigApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/ProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/ProviderUserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/controller/ClassRoomController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/CanteenDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/CarDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/ClassRoomDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/DeliveryOrderDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/DormitoryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/DormitoryUserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/FoodDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/GoodsDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/NoteDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/ParkingDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/ParkingOrderDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/SeatDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/dao/SeatOrderDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/CanteenService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/CarService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/ClassRoomService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/DeliveryOrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/DormitoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/DormitoryUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/FoodService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/GoodsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/NoteService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/ParkingOrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/ParkingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/SeatOrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/SeatService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/VindicateService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/CanteenServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/CarServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/ClassRoomServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/DeliveryOrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/DormitoryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/DormitoryUserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/FoodServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/GoodsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/NoteServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/ParkingOrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/ParkingServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/SeatOrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/SeatServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/service/impl/VindicateServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/ProviderApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/controller/ClassRoomController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/dao/CanteenDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/dao/CarDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/dao/ClassRoomDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/dao/DeliveryOrderDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/dao/DormitoryDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/dao/FoodDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/dao/GoodsDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/dao/ParkingDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/dao/ParkingOrderDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/dao/SeatDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/dao/SeatOrderDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/CanteenService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/CarService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/ClassRoomService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/DeliveryOrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/DormitoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/DormitoryUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/FoodService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/GoodsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/NoteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/ParkingOrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/ParkingService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/SeatOrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/SeatService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/VindicateService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/CanteenServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/CarServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/ClassRoomServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/DeliveryOrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/DormitoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/DormitoryUserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/FoodServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/GoodsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/NoteServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/ParkingOrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/ParkingServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/SeatOrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/SeatServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/target/classes/net/mw/springcloud/service/impl/VindicateServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8082/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8082/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8082/src/main/resources/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylogfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/mylogfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/Provider-Entertainment-8082/src/main/java/net/mw/springcloud/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/Provider-Entertainment-8082/src/main/java/net/mw/springcloud/controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/Provider-Entertainment-8082/src/main/java/net/mw/springcloud/controller/VindicateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/Provider-Entertainment-8082/src/main/java/net/mw/springcloud/controller/VindicateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/Provider-Traffic-8085/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/Provider-Traffic-8085/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/Provider-Traffic-8085/src/main/java/net/mw/springcloud/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/Provider-Traffic-8085/src/main/java/net/mw/springcloud/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/Provider-Traffic-8085/src/main/java/net/mw/springcloud/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/Provider-Traffic-8085/src/main/java/net/mw/springcloud/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/Provider-Traffic-8085/src/main/java/net/mw/springcloud/service/impl/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/Provider-Traffic-8085/src/main/java/net/mw/springcloud/service/impl/CarServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/ProviderUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/Provider-User-8081/src/main/java/net/mw/springcloud/ProviderUserApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +69,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Provider/Provider-Goods-8086/src/main/java/net/mw/springcloud/controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Provider/Provider-Entertainment-8082/src/main/resources" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -161,22 +80,22 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\server\Git\MyGit\SchoolLife\SpringCloud\Provider" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.springframework.security.web" />
       <recent name="net.mw.springcloud" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\server\Git\MyGit\SchoolLife\SpringCloud\Provider\Provider-Entertainment-8082\src\main\resources" />
+      <recent name="E:\server\Git\MyGit\SchoolLife\SpringCloud\Provider\Provider-Entertainment-8082\src\main\java\net\mw\springcloud\Helper" />
+      <recent name="E:\server\Git\MyGit\SchoolLife\SpringCloud\Provider\Provider-Traffic-8085" />
+      <recent name="E:\server\Git\MyGit\SchoolLife\SpringCloud\Provider\Provider-Traffic-8085\src\main\java\net\mw\springcloud\easy\pr" />
+      <recent name="E:\server\Git\MyGit\SchoolLife\SpringCloud\Provider\Provider-Goods-8086\src\main\java\net\mw\springcloud\controller" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="net.mw.springcloud.dao" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\server\Git\MyGit\SchoolLife\SpringCloud\Provider\Provider-Goods-8086\src\main\java\net\mw\springcloud\controller" />
-      <recent name="E:\server\Git\MyGit\SchoolLife\SpringCloud\Provider\Provider-Traffic-8085\src\main\java\net\mw\springcloud\controller" />
-      <recent name="E:\server\Git\MyGit\SchoolLife\SpringCloud\Provider\Provider-Place-8084\src\main\java\net\mw\springcloud\controller" />
-      <recent name="E:\server\Git\MyGit\SchoolLife\SpringCloud\Provider\Provider-Diet-8083\src\main\java\net\mw\springcloud\controller" />
-      <recent name="E:\server\Git\MyGit\SchoolLife\SpringCloud\Provider\Provider-Entertainment-8082\src\main\java\net\mw\springcloud\controller" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\server\Git\MyGit\SchoolLife\SpringCloud\Provider" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -186,7 +105,33 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProviderGoodsApplication">
+  <component name="RunManager" selected="Spring Boot.ProviderPlaceApplication">
+    <configuration name="ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Config-8005" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.mw.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.mw.springcloud.ConfigApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Eureka-8000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.mw.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.mw.springcloud.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Gateway" />
       <extension name="coverage">
@@ -200,15 +145,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProviderDietApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="HystrixApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Hystrix" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.mw.springcloud.HystrixApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderDietApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Provider-Diet-8083" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.mw.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="net.mw.springcloud.ProviderDietApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderEntertainmentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Provider-Entertainment-8082" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.mw.springcloud.ProviderEntertainmentApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -226,46 +182,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProviderPlaceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ProviderPlaceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Provider-Place-8084" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.mw.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="net.mw.springcloud.ProviderPlaceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProviderTrafficApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ProviderTrafficApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Provider-Traffic-8085" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.mw.springcloud.ProviderTrafficApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Provider-User-8081" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="net.mw.springcloud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="net.mw.springcloud.ProviderTrafficApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="net.mw.springcloud.ProviderUserApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.HystrixApplication" />
       <item itemvalue="Spring Boot.ProviderDietApplication" />
-      <item itemvalue="Spring Boot.ProviderPlaceApplication" />
       <item itemvalue="Spring Boot.ProviderTrafficApplication" />
+      <item itemvalue="Spring Boot.ProviderEntertainmentApplication" />
+      <item itemvalue="Spring Boot.ProviderPlaceApplication" />
       <item itemvalue="Spring Boot.ProviderGoodsApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.ConfigApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.ProviderUserApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ProviderGoodsApplication" />
-        <item itemvalue="Spring Boot.ProviderTrafficApplication" />
-        <item itemvalue="Spring Boot.ProviderPlaceApplication" />
+        <item itemvalue="Spring Boot.ProviderUserApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.ProviderDietApplication" />
+        <item itemvalue="Spring Boot.ConfigApplication" />
+        <item itemvalue="Spring Boot.EurekaApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -279,6 +243,11 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="未开始" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -303,6 +272,11 @@
       <workItem from="1650421682230" duration="412000" />
       <workItem from="1650475006576" duration="452000" />
       <workItem from="1650476003224" duration="6605000" />
+      <workItem from="1650520175216" duration="5568000" />
+      <workItem from="1650527913617" duration="55000" />
+      <workItem from="1650610737415" duration="2191000" />
+      <workItem from="1650613110696" duration="754000" />
+      <workItem from="1650630498010" duration="1162000" />
     </task>
     <servers />
   </component>
@@ -310,10 +284,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#New_CloudFoundry_Connection" timestamp="1650521285857">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#New_CloudFoundry_Connection/0.0.1366.728@0.0.1366.728" timestamp="1650521285857" />
     <state x="206" y="38" key="#ProviderApplication_(1)" timestamp="1650433357392">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="206" y="38" key="#ProviderApplication_(1)/0.0.1366.728@0.0.1366.728" timestamp="1650433357391" />
+    <state x="137" y="19" width="1160" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1650523040076">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" width="1160" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1650523040076" />
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1650379697200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -322,6 +304,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="471" y="139" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1650385767272" />
+    <state x="446" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1650522946352">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="446" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1650522946352" />
+    <state x="303" y="42" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1650526206740">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="303" y="42" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1650526206740" />
     <state x="220" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1650432364283">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -350,42 +340,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="370" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1650373462008" />
-    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1650387282099">
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1650526060279">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1650387282099" />
-    <state width="957" height="180" key="GridCell.Tab.0.bottom" timestamp="1650482683233">
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1650526060279" />
+    <state width="904" height="448" key="GridCell.Tab.0.bottom" timestamp="1650527209449">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="957" height="180" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1650482683233" />
-    <state width="957" height="180" key="GridCell.Tab.0.center" timestamp="1650482683233">
+    <state width="904" height="448" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1650527209449" />
+    <state width="904" height="448" key="GridCell.Tab.0.center" timestamp="1650527209448">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="957" height="180" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1650482683233" />
-    <state width="957" height="180" key="GridCell.Tab.0.left" timestamp="1650482683232">
+    <state width="904" height="448" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1650527209448" />
+    <state width="904" height="448" key="GridCell.Tab.0.left" timestamp="1650527209448">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="957" height="180" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1650482683232" />
-    <state width="957" height="180" key="GridCell.Tab.0.right" timestamp="1650482683233">
+    <state width="904" height="448" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1650527209448" />
+    <state width="904" height="448" key="GridCell.Tab.0.right" timestamp="1650527209449">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="957" height="180" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1650482683233" />
-    <state width="957" height="180" key="GridCell.Tab.1.bottom" timestamp="1650482683234">
+    <state width="904" height="448" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1650527209449" />
+    <state width="904" height="448" key="GridCell.Tab.1.bottom" timestamp="1650527209449">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="957" height="180" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1650482683234" />
-    <state width="957" height="180" key="GridCell.Tab.1.center" timestamp="1650482683233">
+    <state width="904" height="448" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1650527209449" />
+    <state width="904" height="448" key="GridCell.Tab.1.center" timestamp="1650527209449">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="957" height="180" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1650482683233" />
-    <state width="957" height="180" key="GridCell.Tab.1.left" timestamp="1650482683233">
+    <state width="904" height="448" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1650527209449" />
+    <state width="904" height="448" key="GridCell.Tab.1.left" timestamp="1650527209449">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="957" height="180" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1650482683233" />
-    <state width="957" height="180" key="GridCell.Tab.1.right" timestamp="1650482683233">
+    <state width="904" height="448" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1650527209449" />
+    <state width="904" height="448" key="GridCell.Tab.1.right" timestamp="1650527209449">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="957" height="180" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1650482683233" />
+    <state width="904" height="448" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1650527209449" />
     <state width="1133" height="215" key="GridCell.Tab.2.bottom" timestamp="1650443186126">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -402,26 +392,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1133" height="215" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1650443186125" />
-    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1650377764151">
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1650527165879">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1650377764151" />
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1650527165879" />
+    <state x="337" y="67" key="NewModule_or_Project.wizard" timestamp="1650526096208">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="337" y="67" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1650526096208" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1650383141876">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1650383141876" />
-    <state x="381" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1650475482652">
+    <state x="381" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1650636573736">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="381" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1650475482652" />
-    <state x="80" y="45" key="new project wizard" timestamp="1650438082972">
+    <state x="381" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1650636573736" />
+    <state x="80" y="45" key="new project wizard" timestamp="1650526016403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="80" y="45" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1650438082972" />
-    <state x="346" y="49" width="672" height="160" key="search.everywhere.popup" timestamp="1650378168031">
+    <state x="80" y="45" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1650526016403" />
+    <state x="346" y="49" width="672" height="160" key="search.everywhere.popup" timestamp="1650520389237">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="160" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1650378168031" />
+    <state x="346" y="49" width="672" height="160" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1650520389237" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

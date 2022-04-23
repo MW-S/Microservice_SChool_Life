@@ -1,5 +1,6 @@
 package net.mw.springcloud.controller;
 
+import net.mw.springcloud.Helper.SensitiveWordFilterHelper;
 import net.mw.springcloud.annotation.CurrentUser;
 import net.mw.springcloud.dao.UserDao;
 import net.mw.springcloud.pojo.po.NotePO;
@@ -26,6 +27,16 @@ public class NoteController extends BaseController<NoteService, NotePO, NoteVO> 
      * log4j实例对象.
      */
     private static Logger logger = LogManager.getLogger(NoteController.class);
+    /**
+     * 敏感词过滤工具
+     */
+    private static SensitiveWordFilterHelper sw ;
+    static {
+        logger.info("加载敏感词过滤工具");
+        sw = new SensitiveWordFilterHelper();
+        sw.InitializationWork();
+        logger.info("敏感词过滤工具加载完毕！");
+    }
 
     @Autowired
     UserDao userDao ;
@@ -33,6 +44,7 @@ public class NoteController extends BaseController<NoteService, NotePO, NoteVO> 
     @PostMapping(value = "/save")
     public ResultMessage save(@RequestBody NoteVO vo, @CurrentUser UserPO currentUser){
         vo.setUserId(String.valueOf(currentUser.getId()));
+        vo.setContent(sw.filterInfo(vo.getContent()));
         return this.save(vo);
     }
 
