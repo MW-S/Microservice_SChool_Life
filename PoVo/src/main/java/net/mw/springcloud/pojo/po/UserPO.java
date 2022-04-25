@@ -3,6 +3,8 @@
  */
 package net.mw.springcloud.pojo.po;
 
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -15,6 +17,7 @@ import java.util.Date;
  *
  */
 @Data
+@TableName("user")
 public class UserPO implements Serializable  {
 
 	/**
@@ -36,6 +39,7 @@ public class UserPO implements Serializable  {
 	 * 用户名
 	 * 
 	 */
+	@TableField("account")
 	private String userName;
 	
 	/**
@@ -60,7 +64,7 @@ public class UserPO implements Serializable  {
 	 * 手机号码
 	 * 
 	 */
-	private Long phone;
+	private String phone;
 	
 	/**
 	 *会话密钥
@@ -85,12 +89,26 @@ public class UserPO implements Serializable  {
 	private String carId;
 
 	/**
+	 * 车辆图片
+	 *
+	 */
+	private String carPicture;
+
+	/**
+	 * 学号
+	 *
+	 */
+	private String number;
+
+	/**
 	 *创建时间
 	 */
+	@TableField("create_gtm")
 	private Date gmtCreate;
 	/**
 	 *修改时间
 	 */
+	@TableField("update_gtm")
 	private Date gmtUpdate;
 	/**
 	 *是否删除

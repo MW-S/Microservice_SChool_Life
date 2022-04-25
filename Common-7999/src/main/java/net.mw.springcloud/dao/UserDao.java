@@ -1,5 +1,7 @@
 package net.mw.springcloud.dao;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import net.mw.springcloud.pojo.po.UserPO;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
@@ -8,10 +10,13 @@ import java.util.List;
 
 @Mapper
 @Repository
-public interface UserDao {
+public interface UserDao extends BaseMapper<UserPO> {
     @Select("select *,account AS user_name,create_gtm as gmt_create from user")
     public List<UserPO>  getUserList();
-    
+
+    @Select("select *,account AS user_name,create_gtm as gmt_create from user where type = #{type}")
+    public List<UserPO>  getUserListByType(Integer type);
+
     @Select("select count(*) from user")
     public String getUserListSize();
 
@@ -29,15 +34,13 @@ public interface UserDao {
 
     @Select("select *,account AS user_name,create_gtm as gmt_create from user where account = #{userName}")
     public List<UserPO> getUserListByAccount(String userName);
-    
-    @Insert("insert into user(account, name, type, password, gender, phone,  session_key, salt) " +
-            "value(#{userName}, #{name}, #{type}, #{password}, #{gender}, #{phone}, #{sessionKey}, #{salt})")
+
+    @Insert("insert into user(account, name, type, password, gender, phone,  session_key, salt, " +
+            "avatar_url, car_id, car_picture) " +
+            "value(#{userName}, #{name}, #{type}, #{password}, #{gender}, #{phone}, #{sessionKey}, #{salt}," +
+            " #{avatarUrl}, #{carId}, #{carPicture})")
     @SelectKey(statement = "select last_insert_id()", keyProperty = "id", before = false, resultType = Long.class)
     public Integer save(UserPO po);
-    
-    @Insert("update user set name = #{name}, type = #{type} , gender = #{gender}, phone = #{phone}, state = #{state} " +
-            " where id = #{id}")
-    public Integer update(UserPO po);
 
     @Insert("update user set carId = #{carId} where id = #{id}")
     public Integer updateCarId(UserPO po);

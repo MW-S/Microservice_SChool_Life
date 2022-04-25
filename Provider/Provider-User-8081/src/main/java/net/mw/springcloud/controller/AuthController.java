@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import net.mw.springcloud.annotation.CurrentUser;
 import net.mw.springcloud.dao.UserDao;
 import net.mw.springcloud.pojo.po.UserPO;
+import net.mw.springcloud.pojo.vo.AseVO;
 import net.mw.springcloud.pojo.vo.UserVO;
 import net.mw.springcloud.result.ResultMessage;
 import net.mw.springcloud.service.UserService;
@@ -65,7 +66,18 @@ public class AuthController {
 		logger.trace("退出login方法");
 		return rs;
     }
-    
+
+	@PostMapping(value = "/wxLogin")
+	public ResultMessage wxLogin(@RequestBody AseVO wxVo){
+		logger.trace("进入wxLogin方法");
+		//解密微信数据
+		UserVO vo = new UserVO();
+		UserPO po = vo.voToPo(UserPO.class);
+		ResultMessage rs=service.wxLogin(po);
+		logger.trace("退出lwxLogin方法");
+		return rs;
+	}
+
     @PostMapping(value = "/register")
     public ResultMessage register(@RequestBody UserVO vo){
 		logger.trace("进入register方法");

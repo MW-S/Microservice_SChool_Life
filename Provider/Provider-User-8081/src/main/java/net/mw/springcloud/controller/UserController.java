@@ -32,13 +32,14 @@ public class UserController {
 
     @GetMapping(value = "/getList")
     public ResultMessage getList(@RequestParam(value = "page", required = false) Integer page,
-								 @RequestParam(value = "size", required = false) Integer size){
+								 @RequestParam(value = "size", required = false) Integer size,
+								 @RequestParam(value = "type", required = false) Integer type){
 		logger.trace("进入getList方法");
 		PageRequest pageVo = null;
 		if(ObjectUtils.allNotNull(page,size)){
 			pageVo = PageRequest.of(page, size);
 		}
-		ResultMessage rs=service.getList(pageVo);
+		ResultMessage rs=service.getList(pageVo, type);
 		logger.trace("退出getList方法");
 		return rs;
     }

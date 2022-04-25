@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("goods")
+//@RequestMapping("goods")
 public class GoodsController extends BaseController<GoodsService, GoodsPO, GoodsVO> {
     /**
      * log4j实例对象.

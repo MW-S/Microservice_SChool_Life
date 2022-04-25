@@ -1,5 +1,6 @@
 package net.mw.springcloud.easy.pr.train;
 
+import static net.mw.springcloud.easy.pr.core.CoreFunc.projectedHistogram;
 import static org.bytedeco.javacpp.opencv_core.CV_32F;
 import static org.bytedeco.javacpp.opencv_core.CV_32FC1;
 import static org.bytedeco.javacpp.opencv_core.CV_32SC1;
@@ -7,10 +8,12 @@ import static org.bytedeco.javacpp.opencv_core.CV_STORAGE_WRITE;
 import static org.bytedeco.javacpp.opencv_core.getTickCount;
 import static org.bytedeco.javacpp.opencv_highgui.imread;
 import static org.bytedeco.javacpp.opencv_imgproc.resize;
-import static org.easypr.core.CoreFunc.projectedHistogram;
 
 import java.util.Vector;
 
+import net.mw.springcloud.easy.pr.core.CoreFunc;
+import net.mw.springcloud.easy.pr.util.Convert;
+import net.mw.springcloud.easy.pr.util.Util;
 import org.bytedeco.javacpp.BytePointer;
 import org.bytedeco.javacpp.opencv_core.CvFileStorage;
 import org.bytedeco.javacpp.opencv_core.CvMemStorage;
@@ -19,9 +22,7 @@ import org.bytedeco.javacpp.opencv_core.Mat;
 import org.bytedeco.javacpp.opencv_core.Scalar;
 import org.bytedeco.javacpp.opencv_core.Size;
 import org.bytedeco.javacpp.opencv_ml.CvANN_MLP;
-import org.easypr.core.CoreFunc.Direction;
-import org.easypr.util.Convert;
-import org.easypr.util.Util;
+
 
 /*
  * Created by fanwenjie
@@ -48,8 +49,8 @@ public class ANNTrain {
 
     public Mat features(Mat in, int sizeData) {
         // Histogram features
-        float[] vhist = projectedHistogram(in, Direction.VERTICAL);
-        float[] hhist = projectedHistogram(in, Direction.HORIZONTAL);
+        float[] vhist = projectedHistogram(in, CoreFunc.Direction.VERTICAL);
+        float[] hhist = projectedHistogram(in, CoreFunc.Direction.HORIZONTAL);
 
         // Low data feature
         Mat lowData = new Mat();

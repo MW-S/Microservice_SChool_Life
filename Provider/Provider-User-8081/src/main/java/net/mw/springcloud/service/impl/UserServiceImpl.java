@@ -64,6 +64,67 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private DormitoryUserDao dormitoryUserDao;
 
+	@Override
+	public ResultMessage wxLogin(UserPO po) {
+		logger.trace("进入login方法");
+		ResultMessage rs = new ResultMessage();
+		try {
+			//执行账号查找操作
+			UserPO queryPo =new UserPO();
+			queryPo.setUserName(po.getUserName());
+			List<UserPO> pos = dao.getUsersByAccount(queryPo);
+			if(pos.isEmpty()) {
+				String salt = RandomStringUtils.randomAlphanumeric(20);
+				queryPo.setSalt(salt);
+				queryPo.setPassword(Encrypt.encrypt(queryPo.getUserName(),queryPo.getSalt()));
+
+			}else {
+					List<String> roles = new ArrayList<>();
+					List<RolePO>rolePos = roleDao.getRoleByUserName(po.getUserName());
+					for(RolePO item: rolePos) {
+						roles.add(item.getName());
+					}
+					// 如果用户角色为空，则默认赋予 ROLE_USER 角色
+					if (CollectionUtils.isEmpty(roles)) {
+						roles = Collections.singletonList(UserRoleConstants.ROLE_EDITOR);
+					}
+					Map<String,Object> credentials = new HashMap<String,Object>();
+					credentials.put("user",queryPo.getUserName());
+					credentials.put("password",po.getPassword());
+/*					Encrypt.setTempSalt(pos.get(0).getSalt());
+					// 内部登录请求
+		            UsernamePasswordAuthenticationToken authRequest = new UsernamePasswordAuthenticationToken( po.getUserName()
+		            		, po.getPassword());*/
+					// 验证
+					String token = jwtTokenUtils.createToken(credentials, roles);
+					Authentication auth = jwtTokenUtils.getAuthentication(token);//authenticationManager.authenticate(authRequest);
+					SecurityContextHolder.getContext().setAuthentication(auth);
+					Map<String, Object> param =new HashMap<>();
+					param.put("token", token);
+					rs.setCode(1L);
+					rs.setData(param);
+					rs.setMsg("登录成功!");
+			}
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+			rs.setMsg("参数不正确");
+			rs.setCode(2L);
+		} catch (BadCredentialsException e) {
+			e.printStackTrace();
+			rs.setCode(1L);
+			rs.setMsg("密码错误!");
+		}catch (AuthenticationException e) {
+			e.printStackTrace();
+			rs.setCode(1L);
+			rs.setMsg("验证错误!");
+		} catch (Exception e) {
+			e.printStackTrace();
+			rs.setMsg("登录失败");
+			rs.setCode(0L);
+		}
+		logger.trace("退出login方法");
+		return rs;
+	}
     @Override
     public ResultMessage login(UserPO po) {
     	logger.trace("进入login方法");
@@ -167,7 +228,7 @@ public class UserServiceImpl implements UserService {
 //				user.setPassword(new BCryptPasswordEncoder().encode(salt+po.getPassword()));
 				user.setPassword(Encrypt.encrypt(po.getPassword(),salt));
 				user.setPhone(po.getPhone());
-				user.setType(0);
+				user.setType(po.getType());
 		        user.setSalt(salt);
 		        System.out.println("创建账号：" + queryPo.getUserName());
 		        dao.save(user);
@@ -213,7 +274,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public ResultMessage getList(PageRequest page) {
+	public ResultMessage getList(PageRequest page, Integer type) {
 		logger.trace("进入getList方法");
     	ResultMessage rs = new ResultMessage();
 		try {
@@ -222,7 +283,8 @@ public class UserServiceImpl implements UserService {
 			if(ObjectUtils.allNotNull(page)){
 				PageHelper.startPage(page.getPageNumber(), page.getPageSize());
 			}
-			List<UserPO> pos = dao.getUserList();
+			List<UserPO> pos = ObjectUtils.allNotNull(type)?dao.getUserListByType(type):
+					dao.getUserList();
 			List<UserVO> vos = new ArrayList<>();
 			pos.forEach((item)->{
 				UserVO vo = new UserVO();
@@ -294,9 +356,19 @@ public class UserServiceImpl implements UserService {
     	ResultMessage rs = new ResultMessage();
 		try {
 			UserPO lastPo =dao.getUserById(po.getId());
-			lastPo.setName(po.getName());
-			lastPo.setType(po.getType());
-			if(dao.update(lastPo) > 0 ) {
+			if (ObjectUtils.allNotNull(po.getName())) {
+				lastPo.setName(po.getName());
+			}
+			if (ObjectUtils.allNotNull(po.getCarId())) {
+				lastPo.setCarId(po.getCarId());
+			}
+			if (ObjectUtils.allNotNull(po.getNumber())) {
+				lastPo.setNumber(po.getNumber());
+			}
+			if (ObjectUtils.allNotNull(po.getCarPicture())) {
+				lastPo.setCarPicture(po.getCarPicture());
+			}
+			if(dao.update(lastPo,new QueryWrapper<UserPO>().lambda().eq(UserPO::getId, lastPo.getId())) > 0 ) {
 				rs.setCode(1L);
 				rs.setMsg("修改成功!");
 			}else {

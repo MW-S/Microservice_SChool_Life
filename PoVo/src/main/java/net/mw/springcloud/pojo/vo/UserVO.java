@@ -82,7 +82,18 @@ public class UserVO extends BaseVO {
 	 *
 	 */
 	private String carId;
-	
+
+	/**
+	 * 车辆图片
+	 *
+	 */
+	private String carPicture;
+
+	/**
+	 * 学号
+	 *
+	 */
+	private String number;
 	/**
 	 *创建时间
 	 */

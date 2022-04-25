@@ -21,7 +21,7 @@ public interface UserService {
     * @Param code 信息标识码
     * Map<String,Object>
     */
-   public ResultMessage getList(PageRequest page);
+   public ResultMessage getList(PageRequest page, Integer type);
 	
     /**
      *
@@ -32,7 +32,14 @@ public interface UserService {
      */
     public ResultMessage login(UserPO user);
 
-
+    /**
+     *
+     * 2020年4月17日
+     * @Param user 用户信息
+     * @Param code 信息标识码
+     * Map<String,Object>
+     */
+    public ResultMessage wxLogin(UserPO user);
     /**
      *
      * 2020年4月17日

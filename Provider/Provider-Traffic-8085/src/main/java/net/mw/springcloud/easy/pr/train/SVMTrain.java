@@ -1,15 +1,16 @@
 package net.mw.springcloud.easy.pr.train;
 
 
-import org.easypr.core.Features;
-import org.easypr.util.Convert;
-import org.easypr.core.SVMCallback;
+
+
+import net.mw.springcloud.easy.pr.core.Features;
+import net.mw.springcloud.easy.pr.core.SVMCallback;
+import net.mw.springcloud.easy.pr.util.Convert;
+import net.mw.springcloud.easy.pr.util.Util;
 
 import static org.bytedeco.javacpp.opencv_core.*;
 import static org.bytedeco.javacpp.opencv_highgui.*;
 import static org.bytedeco.javacpp.opencv_ml.*;
-
-import org.easypr.util.Util;
 
 import java.util.*;
 
