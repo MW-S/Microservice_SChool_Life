@@ -138,6 +138,7 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter{
 		//允许匿名及登录用户访问
 		.antMatchers("/error/**").permitAll()
 		.antMatchers("/auth/login").permitAll()
+		.antMatchers("/auth/wxLogin").permitAll()
 		.antMatchers("/auth/isLogin").permitAll()
 		.antMatchers("/auth/logout").permitAll()
 		.antMatchers("/auth/register").permitAll()

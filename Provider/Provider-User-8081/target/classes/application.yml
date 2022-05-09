@@ -6,7 +6,7 @@ minio:
   bucket: school
   # Minio服务地址
   #minio.host= http://172.18.23.133:9001
-  host: http://192.168.162.54:9001
+  host: http://192.168.161.171:9001
   port: 9001
   # 访问路径
   #minio.url=  ${minio.host}/${minio.bucket}/
@@ -15,6 +15,10 @@ minio:
   access-key: 110120119
   # MINIO_SECRET_KEY
   secret-key: 110120119
+#小程序配置
+wx:
+  appid: wx06c1df322bfa62af
+  secret: 08ea6fb2a6f5193ba7e0536c86e2025f
 
 management:
   endpoint:

@@ -79,7 +79,7 @@ public class MinioHelper {
     }
 
     //网络图片转存
-    public String putObject(String fileName, String imageurl) throws InvalidEndpointException, InvalidPortException,
+    public  String putObject(String fileName, String imageurl) throws InvalidEndpointException, InvalidPortException,
 	    IOException, InvalidKeyException, ErrorResponseException, IllegalArgumentException,
 	    InsufficientDataException, InternalException, InvalidBucketNameException, InvalidResponseException,
 	    NoSuchAlgorithmException, XmlParserException, RegionConflictException, InvalidExpiresRangeException {

@@ -33,7 +33,7 @@ public class RewriteRequestFilter implements GlobalFilter, Ordered {
         ServerHttpRequest serverHttpRequest = exchange.getRequest();
         String method = serverHttpRequest.getMethodValue();
         if ("POST".equals(method)) {
-            if(serverHttpRequest.getURI().toString().contains("delByIds")){
+            if(serverHttpRequest.getURI().toString().contains("del")){
                 MultiValueMap<String, String> queryParams = serverHttpRequest.getQueryParams();
                 //TODO 得到Get请求的请求参数后，做你想做的事
                 log.info("------------------------------- 带Query的Post 请求参数 ------------------------------------");

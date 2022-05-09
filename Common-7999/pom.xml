@@ -141,6 +141,12 @@
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-commons</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.68</version>
+            <scope>compile</scope>
+        </dependency>
         <!-- Thanks for using https://jar-download.com -->
     </dependencies>
 

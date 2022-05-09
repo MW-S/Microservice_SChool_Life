@@ -18,6 +18,9 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 @RequestMapping("parking")
 public class ParkingController extends BaseController<ParkingService, ParkingPO, ParkingVO> {
@@ -69,13 +72,19 @@ public class ParkingController extends BaseController<ParkingService, ParkingPO,
     @Transactional(propagation = Propagation.REQUIRED)
     @PostMapping(value = "/delOrderByIds")
     public ResultMessage getOrderList(@RequestParam("ids") String[] ids){
+        List<Long> parkingIds = new ArrayList<>();
+        if(ObjectUtils.allNotNull(ids) && ids.length != 0){
+            for(String id: ids){
+                parkingIds.add(orderDao.selectById(id).getParkingId());
+            }
+        }
         ResultMessage rs = orderController.delByIds(ids);
         if(rs.getCode().equals(1L)){
-            if(!ObjectUtils.allNotNull(ids)){
-                for(String id: ids){
-                    ParkingPO parking = new ParkingPO();
-                    parking.setId(orderDao.selectById(id).getParkingId());
-                    parking.setState(false);
+            if(parkingIds.size() != 0){
+                ParkingPO parking = new ParkingPO();
+                parking.setState(false);
+                for(Long id: parkingIds){
+                    parking.setId(id);
                     dao.updateById(parking);
                 }
             }

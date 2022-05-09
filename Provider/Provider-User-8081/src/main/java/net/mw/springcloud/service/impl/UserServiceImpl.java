@@ -1,10 +1,6 @@
 package net.mw.springcloud.service.impl;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -16,6 +12,7 @@ import net.mw.springcloud.result.ResultMessage;
 import net.mw.springcloud.service.UserService;
 import net.mw.springcloud.utils.Encrypt;
 import net.mw.springcloud.utils.JwtTokenUtils;
+import net.mw.springcloud.utils.MinioHelper;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -42,6 +39,8 @@ public class UserServiceImpl implements UserService {
 	 */
 	private static Logger logger = LogManager.getLogger(UserServiceImpl.class);
 	
+	@Autowired
+	private MinioHelper minio;
 
     @Autowired
     private JwtTokenUtils jwtTokenUtils;
@@ -66,7 +65,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public ResultMessage wxLogin(UserPO po) {
-		logger.trace("进入login方法");
+		logger.trace("进入wxLogin方法");
 		ResultMessage rs = new ResultMessage();
 		try {
 			//执行账号查找操作
@@ -74,37 +73,52 @@ public class UserServiceImpl implements UserService {
 			queryPo.setUserName(po.getUserName());
 			List<UserPO> pos = dao.getUsersByAccount(queryPo);
 			if(pos.isEmpty()) {
+				//设置性别
+				po.setGender(po.getGender()==0?1:0);
+				//头像转存到OSS对象存储服务器中
+				String saveFileName = UUID.randomUUID() + "." + "jpg";
+				String path = minio.putObject(saveFileName, po.getAvatarUrl());
+				po.setAvatarUrl(path);
+				//自动生成盐值与密码
 				String salt = RandomStringUtils.randomAlphanumeric(20);
-				queryPo.setSalt(salt);
-				queryPo.setPassword(Encrypt.encrypt(queryPo.getUserName(),queryPo.getSalt()));
-
+				po.setSalt(salt);
+				po.setPassword(Encrypt.encrypt(queryPo.getUserName(),queryPo.getSalt()));
+				dao.save(po);
 			}else {
-					List<String> roles = new ArrayList<>();
-					List<RolePO>rolePos = roleDao.getRoleByUserName(po.getUserName());
-					for(RolePO item: rolePos) {
-						roles.add(item.getName());
-					}
-					// 如果用户角色为空，则默认赋予 ROLE_USER 角色
-					if (CollectionUtils.isEmpty(roles)) {
-						roles = Collections.singletonList(UserRoleConstants.ROLE_EDITOR);
-					}
-					Map<String,Object> credentials = new HashMap<String,Object>();
-					credentials.put("user",queryPo.getUserName());
-					credentials.put("password",po.getPassword());
+				po = dao.getUserByAccount(po.getUserName());
+			}
+			//进行登录操作
+			List<String> roles = new ArrayList<>();
+			List<RolePO>rolePos = roleDao.getRoleByUserName(po.getUserName());
+			for(RolePO item: rolePos) {
+				roles.add(item.getName());
+			}
+			// 如果用户角色为空，则默认赋予 ROLE_USER 角色
+			if (CollectionUtils.isEmpty(roles)) {
+				roles = Collections.singletonList(UserRoleConstants.ROLE_EDITOR);
+			}
+			Map<String,Object> credentials = new HashMap<String,Object>();
+			credentials.put("user",po.getUserName());
+			credentials.put("password",po.getPassword());
 /*					Encrypt.setTempSalt(pos.get(0).getSalt());
 					// 内部登录请求
 		            UsernamePasswordAuthenticationToken authRequest = new UsernamePasswordAuthenticationToken( po.getUserName()
 		            		, po.getPassword());*/
-					// 验证
-					String token = jwtTokenUtils.createToken(credentials, roles);
-					Authentication auth = jwtTokenUtils.getAuthentication(token);//authenticationManager.authenticate(authRequest);
-					SecurityContextHolder.getContext().setAuthentication(auth);
-					Map<String, Object> param =new HashMap<>();
-					param.put("token", token);
-					rs.setCode(1L);
-					rs.setData(param);
-					rs.setMsg("登录成功!");
-			}
+			// 验证
+			String token = jwtTokenUtils.createToken(credentials, roles);
+			Authentication auth = jwtTokenUtils.getAuthentication(token);//authenticationManager.authenticate(authRequest);
+			SecurityContextHolder.getContext().setAuthentication(auth);
+			Map<String, Object> param =new HashMap<>();
+			param.put("token", token);
+			po.setSalt(null);
+			po.setUserName(null);
+			po.setPassword(null);
+			UserVO resVo = new UserVO();
+			resVo.poToVo(po);
+			param.put("user", resVo);
+			rs.setCode(1L);
+			rs.setData(param);
+			rs.setMsg("登录成功!");
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 			rs.setMsg("参数不正确");
@@ -122,7 +136,7 @@ public class UserServiceImpl implements UserService {
 			rs.setMsg("登录失败");
 			rs.setCode(0L);
 		}
-		logger.trace("退出login方法");
+		logger.trace("退出wxLogin方法");
 		return rs;
 	}
     @Override
@@ -279,7 +293,8 @@ public class UserServiceImpl implements UserService {
     	ResultMessage rs = new ResultMessage();
 		try {
 			Map<String,Object> data = new HashMap<String,Object>();
-			String size = dao.getUserListSize();
+			String total =  ObjectUtils.allNotNull(type)?dao.getUserListSizByTye(type):
+					dao.getUserListSize();
 			if(ObjectUtils.allNotNull(page)){
 				PageHelper.startPage(page.getPageNumber(), page.getPageSize());
 			}
@@ -291,7 +306,8 @@ public class UserServiceImpl implements UserService {
 				vo.poToVo(item);
 				vos.add(vo);
 			});
-			data.put("size", size);
+			data.put("total", total);
+			data.put("size", vos.size());
 			data.put("data", vos);
 			rs.setData(data);
 			rs.setCode(1L);
@@ -325,6 +341,8 @@ public class UserServiceImpl implements UserService {
 			});
 //			userVo.setRoles(roleVos);
 			UserVO resVo = new UserVO();
+			resVo.setPassword(null);
+			resVo.setSalt(null);
 			resVo.poToVo(resPo);
 			Long noteCount = noteDao.selectCount(new QueryWrapper<NotePO>().eq("user_id", resVo.getId()));
 			Long vindicateCount = vindicateDao.selectCount(new QueryWrapper<VindicatePO>().eq("user_id", resVo.getId()));
@@ -359,6 +377,15 @@ public class UserServiceImpl implements UserService {
 			if (ObjectUtils.allNotNull(po.getName())) {
 				lastPo.setName(po.getName());
 			}
+			if (ObjectUtils.allNotNull(po.getGender())) {
+				lastPo.setGender(po.getGender());
+			}
+			if (ObjectUtils.allNotNull(po.getPhone())) {
+				lastPo.setPhone(po.getPhone());
+			}
+			if (ObjectUtils.allNotNull(po.getAvatarUrl())) {
+				lastPo.setAvatarUrl(po.getAvatarUrl());
+			}
 			if (ObjectUtils.allNotNull(po.getCarId())) {
 				lastPo.setCarId(po.getCarId());
 			}
@@ -367,6 +394,9 @@ public class UserServiceImpl implements UserService {
 			}
 			if (ObjectUtils.allNotNull(po.getCarPicture())) {
 				lastPo.setCarPicture(po.getCarPicture());
+			}
+			if (ObjectUtils.allNotNull(po.getIsLocked())) {
+				lastPo.setIsLocked(po.getIsLocked());
 			}
 			if(dao.update(lastPo,new QueryWrapper<UserPO>().lambda().eq(UserPO::getId, lastPo.getId())) > 0 ) {
 				rs.setCode(1L);

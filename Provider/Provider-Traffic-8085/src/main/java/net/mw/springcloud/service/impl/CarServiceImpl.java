@@ -106,6 +106,7 @@ public class CarServiceImpl extends ServiceImpl<CarDao, CarPO> implements CarSer
 				vo.poToVo(item);
 				vos.add(vo);
 			});
+			data.put("total",  dao.count());
 			data.put("size", vos.size());
 			data.put("data", vos);
 			rs.setData(data);

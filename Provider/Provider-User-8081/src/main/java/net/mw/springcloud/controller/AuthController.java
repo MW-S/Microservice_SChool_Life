@@ -7,9 +7,13 @@ import net.mw.springcloud.dao.UserDao;
 import net.mw.springcloud.pojo.po.UserPO;
 import net.mw.springcloud.pojo.vo.AseVO;
 import net.mw.springcloud.pojo.vo.UserVO;
+import net.mw.springcloud.pojo.vo.WXAppidAndSecretVO;
+import net.mw.springcloud.pojo.vo.WXUserInfoVO;
 import net.mw.springcloud.result.ResultMessage;
+import net.mw.springcloud.result.UnifiedResultCode;
 import net.mw.springcloud.service.UserService;
 import net.mw.springcloud.utils.JwtTokenUtils;
+import net.mw.springcloud.utils.WeChatHelper;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -70,10 +74,20 @@ public class AuthController {
 	@PostMapping(value = "/wxLogin")
 	public ResultMessage wxLogin(@RequestBody AseVO wxVo){
 		logger.trace("进入wxLogin方法");
+		ResultMessage rs = new ResultMessage();
 		//解密微信数据
-		UserVO vo = new UserVO();
-		UserPO po = vo.voToPo(UserPO.class);
-		ResultMessage rs=service.wxLogin(po);
+		WXAppidAndSecretVO wxAppidAndSecretVO = WeChatHelper.getSessionKey(wxVo.getCode());
+		if(ObjectUtils.allNotNull(wxAppidAndSecretVO)){
+			WXUserInfoVO wxUserInfoVO = WeChatHelper.getUserInfoAndIsExist(wxVo.getEncryptedData(),
+					wxVo.getIv(),wxAppidAndSecretVO.getSession_key());
+			UserVO vo = wxUserInfoVO.toUserVO();
+			vo.setUserName(wxAppidAndSecretVO.getOpenid());
+			UserPO po = vo.voToPo(UserPO.class);
+			rs = service.wxLogin(po);
+		}else{
+			rs.setCode(UnifiedResultCode.getCode("fail"));
+			rs.setMsg("微信请求码有误！");
+		}
 		logger.trace("退出lwxLogin方法");
 		return rs;
 	}

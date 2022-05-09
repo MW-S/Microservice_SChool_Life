@@ -20,6 +20,9 @@ public interface UserDao extends BaseMapper<UserPO> {
     @Select("select count(*) from user")
     public String getUserListSize();
 
+    @Select("select count(*) from user where type = #{type}")
+    public String getUserListSizByTye(Integer type);
+
     @Select("select *,account AS user_name,create_gtm as gmt_create from user where id = #{id}")
     public UserPO getUserById(Long id);
 
@@ -31,6 +34,9 @@ public interface UserDao extends BaseMapper<UserPO> {
     
     @Select("select *,account AS user_name,create_gtm as gmt_create from user where account = #{userName}")
     public UserPO getUserByAccount(String userName);
+
+    @Select("select count(*) from user where account = #{userName}")
+    public Integer getUserCountByAccount(String userName);
 
     @Select("select *,account AS user_name,create_gtm as gmt_create from user where account = #{userName}")
     public List<UserPO> getUserListByAccount(String userName);
