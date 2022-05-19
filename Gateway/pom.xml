@@ -9,7 +9,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+	<groupId>net.mw.springcloud</groupId>
     <artifactId>Gateway</artifactId>
+	<version>1.0.0</version>
+	<properties>
+		<java.version>1.8</java.version>
+		<!-- 文件拷贝时的编码 -->  
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>  
+        <!-- 编译时的编码 -->  
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>  
+	</properties>
 
     <dependencies>
         <!--Spring Cloud Gateway-->
@@ -38,4 +48,29 @@
         </dependency>
     </dependencies>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<!-- <layout>ZIP</layout>
+					<includes>
+						                    <include>
+						                        <groupId>nothing</groupId>
+						                        <artifactId>nothing</artifactId>
+						                    </include>
+					                	</includes> -->
+					<mainClass>net.mw.springcloud.GatewayApplication</mainClass>
+				</configuration>
+                	<executions>
+		                <execution>
+		                    <goals>
+		                        <goal>repackage</goal>
+		                    </goals>
+		                </execution>
+            		</executions>
+			</plugin>		
+		</plugins>
+	</build>
 </project>

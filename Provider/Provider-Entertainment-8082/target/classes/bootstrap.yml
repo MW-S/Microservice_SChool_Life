@@ -1,9 +1,10 @@
+school: 172.20.186.83
 eureka:
   client:
     serviceUrl:
       register-with-eureka: true
       fetch-registry: true
-      defaultZone: http://localhost:8000/eureka/
+      defaultZone: http://${school}:8000/eureka/
   instance:
     preferIpAddress: true
 

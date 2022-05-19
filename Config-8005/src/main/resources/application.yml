@@ -2,7 +2,9 @@ server:
   port: 8005
 eureka:
   instance:
+    prefer-ip-address: true
     instance-id: config
+    #ip-address: 172.28.98.12
   client:
     registerWithEureka: true
     fetchRegistry: true

@@ -423,9 +423,15 @@ public class UserServiceImpl implements UserService {
 		logger.trace("进入update方法");
 		ResultMessage rs = new ResultMessage();
 		try {
-			UserPO lastPo =dao.getUserById(po.getId());
-			lastPo.setCarId(po.getCarId());
-			if(dao.updateCarId(po) > 0 ) {
+			if(!ObjectUtils.allNotNull(po)){
+				logger.debug("Update Po must not null!");
+				throw new IllegalArgumentException("Update Po must not null!");
+			}
+			if(!ObjectUtils.allNotNull(po.getCarId(), po.getCarPicture(), po.getId())){
+				logger.debug("Update info must not null!");
+				throw new IllegalArgumentException("Update Info must not null!");
+			}
+			if(dao.updateUserCar(po) > 0 ) {
 				rs.setCode(1L);
 				rs.setMsg("修改成功!");
 			}else {

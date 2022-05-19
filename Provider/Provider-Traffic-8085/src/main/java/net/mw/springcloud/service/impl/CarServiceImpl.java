@@ -1,28 +1,36 @@
 package net.mw.springcloud.service.impl;
 
+import cn.hutool.core.io.FileUtil;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
 import io.jsonwebtoken.lang.Collections;
+import net.mw.springcloud.ProviderTrafficApplication;
 import net.mw.springcloud.dao.CarDao;
-import net.mw.springcloud.easy.pr.util.Util;
+import net.mw.springcloud.easypr.core.CharsRecognise;
+import net.mw.springcloud.easypr.core.PlateDetect;
 import net.mw.springcloud.pojo.po.CarPO;
 import net.mw.springcloud.pojo.po.UserPO;
 import net.mw.springcloud.pojo.vo.CarVO;
 import net.mw.springcloud.result.ResultMessage;
 import net.mw.springcloud.service.CarService;
+import net.mw.springcloud.utils.MinioHelper;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.bytedeco.javacpp.opencv_core;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.io.InputStream;
+import java.net.URL;
+import java.util.*;
+
+import static org.bytedeco.javacpp.opencv_highgui.imread;
 
 /**
  * @Description TaskServiceImpl接口实现
@@ -40,6 +48,35 @@ public class CarServiceImpl extends ServiceImpl<CarDao, CarPO> implements CarSer
 	@Autowired
 	private CarService dao;
 
+	@Autowired
+    private MinioHelper minioHelper;
+    /**
+     *  识别车牌
+     * 2022年5月14日
+     * String
+     */
+    public String recognize(String image) {
+        String res = null;
+//    	org.bytedeco.javacpp.Loader t;
+//        System.out.println("Current: " + image);
+		logger.info("Current: " + image);
+        opencv_core.Mat src = imread(image);
+        PlateDetect plateDetect = new PlateDetect();
+        plateDetect.setPDLifemode(true);
+        Vector<opencv_core.Mat> matVector = new Vector<opencv_core.Mat>();
+        int recoginzeResult=plateDetect.plateDetect(src, matVector);
+        if (0 == recoginzeResult) {
+            CharsRecognise cr = new CharsRecognise();
+            for (int i = 0; i < matVector.size(); ++i) {
+                String result = cr.charsRecognise(matVector.get(i));
+                res = result;
+                logger.info("Chars Recognised: " + result);
+            }
+        }else{
+			logger.info("recoginzeResult: " + recoginzeResult);
+        }
+        return res;
+    }
 
 	@Override
 	public ResultMessage getCode(MultipartFile image) {
@@ -55,8 +92,25 @@ public class CarServiceImpl extends ServiceImpl<CarDao, CarPO> implements CarSer
 				throw new IllegalArgumentException("File must image!");
 			}
 			String fileName = image.getOriginalFilename();
-			File dest = new File(new File("tmp").getAbsolutePath()+ "/" + fileName);
-			String number = Util.recognize(dest.getAbsolutePath());
+			File path = null;
+            URL url = ProviderTrafficApplication.class.getResource("");
+            String protocol = url.getProtocol();
+            //判断是否在JAR包环境下
+            if("jar".equals(protocol)){
+                //JAR包环境下设置为同级目录下的config为父目录
+                path = FileUtil.file(".", "config/tmp/" );
+                logger.error(path.getAbsolutePath());
+            }else{
+				path = new File("tmp");
+            }
+			if(!path.exists()){
+				path.mkdirs();
+			}
+			File dest = new File(path.getAbsolutePath()+ "//" + fileName);
+			dest.createNewFile();
+//			image.transferTo(dest);
+            FileUtils.copyInputStreamToFile(image.getInputStream(),dest);
+			String number = recognize(dest.getAbsolutePath());
 			if(ObjectUtils.allNotNull(number)){
 				Map<String,Object> data = new HashMap<String,Object>();
 				CarPO car = new CarPO();
@@ -65,7 +119,13 @@ public class CarServiceImpl extends ServiceImpl<CarDao, CarPO> implements CarSer
 					dest.delete();
 				}
 				data.put("code", number);
-				data.put("state", dao.save(car));
+                data.put("path", this.minioHelper.putObject(image));
+				if(dao.count(new QueryWrapper<CarPO>().eq("number", number)) == 0){
+                    data.put("state", dao.save(car));
+                    rs.setMsg("识别成功!");
+                }else{
+                    rs.setMsg("车牌已存在!");
+                }
 				rs.setData(data);
 				rs.setCode(1L);
 				rs.setMsg("识别成功!");
@@ -81,7 +141,9 @@ public class CarServiceImpl extends ServiceImpl<CarDao, CarPO> implements CarSer
 			e.printStackTrace();
 			rs.setMsg("识别失败");
 			rs.setCode(0L);
-		}
+		} finally  {
+            System.gc();
+        }
 		logger.trace("退出 getCode 方法");
 		return rs;
 	}

@@ -46,11 +46,12 @@ public class RewriteRequestFilter implements GlobalFilter, Ordered {
                         dataBuffer.read(bytes);
                         String bodyStr = new String(bytes, StandardCharsets.UTF_8);
                         log.info("------------------------------- POST请求参数 ------------------------------------");
-                        log.info(bodyStr);
                         //TODO 拿到POST日志后的操作
                         DataBufferUtils.release(dataBuffer);
                         MediaType contentType = exchange.getRequest().getHeaders().getContentType();
                         log.info("contentType:" + contentType);
+                        if(!contentType.toString().contains("file"))
+                            log.info("Body: " + bodyStr);
                         Flux<DataBuffer> cachedFlux = Flux.defer(() -> {
                             DataBuffer buffer = exchange.getResponse().bufferFactory().wrap(bytes);
                             DataBufferUtils.retain(buffer);
@@ -68,7 +69,7 @@ public class RewriteRequestFilter implements GlobalFilter, Ordered {
             MultiValueMap<String, String> queryParams = serverHttpRequest.getQueryParams();
             //TODO 得到Get请求的请求参数后，做你想做的事
             log.info("------------------------------- GET请求参数 ------------------------------------");
-            log.info(queryParams.toString());
+            log.info("Params: " + queryParams.toString());
             return chain.filter(exchange);
         }
         return chain.filter(exchange);

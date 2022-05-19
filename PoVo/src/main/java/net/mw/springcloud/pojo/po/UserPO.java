@@ -86,6 +86,7 @@ public class UserPO implements Serializable  {
 	 * 车辆ID
 	 *
 	 */
+	@TableField("car_id")
 	private String carId;
 
 	/**

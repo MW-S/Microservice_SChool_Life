@@ -1,6 +1,21 @@
 server:
   port: 8085
-
+school: 120.25.235.215
+#minio配置
+minio:
+  # bucket名称
+  bucket: school
+  # Minio服务地址
+  #minio.host= http://172.18.23.133:9001
+  host: http://${school}:9001
+  port: 9001
+  # 访问路径
+  #minio.url=  ${minio.host}/${minio.bucket}/
+  url:  /${minio.bucket}/
+  # MINIO_ACCESS_KEY
+  access-key: 110120119
+  # MINIO_SECRET_KEY
+  secret-key: 110120119
 management:
   endpoint:
     shutdown:

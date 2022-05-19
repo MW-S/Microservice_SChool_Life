@@ -1,3 +1,4 @@
+school: 120.25.235.215
 server:
   port: 8081
 #minio配置
@@ -6,7 +7,7 @@ minio:
   bucket: school
   # Minio服务地址
   #minio.host= http://172.18.23.133:9001
-  host: http://192.168.161.171:9001
+  host: http://${school}:9001
   port: 9001
   # 访问路径
   #minio.url=  ${minio.host}/${minio.bucket}/

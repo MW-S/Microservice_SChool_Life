@@ -1,0 +1,11 @@
+server:
+  port: 8085
+#school: 172.20.186.83
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"

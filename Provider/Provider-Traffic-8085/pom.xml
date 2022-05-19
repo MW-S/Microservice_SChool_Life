@@ -11,18 +11,27 @@
 
     <artifactId>Provider-Traffic-8085</artifactId>
 
+	<properties>
+		<java.version>1.8</java.version>
+		<!-- 文件拷贝时的编码 -->  
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>  
+        <!-- 编译时的编码 -->  
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>  
+	</properties>
+
     <dependencies>
         <!--        配置自定义包          -->
         <dependency>
-            <groupId>net.mw</groupId>
-            <artifactId>Common-7999</artifactId>
+            <groupId>net.mw.springcloud</groupId>
+            <artifactId>Common</artifactId>
             <version>1.0.0</version>
         </dependency>
-        <dependency>
-            <groupId>net.mw</groupId>
+<!--         <dependency>
+            <groupId>net.mw.springcloud</groupId>
             <artifactId>PoVo</artifactId>
             <version>1.0.0</version>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -64,10 +73,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jetty</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-devtools</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.github.jsqlparser</groupId>
             <artifactId>jsqlparser</artifactId>
@@ -105,6 +114,12 @@
             <version>1.2</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-core -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-core</artifactId>
+            <version>5.7.19</version>
+        </dependency>
 
         <dependency>
             <groupId>org.bytedeco.javacpp-presets</groupId>
@@ -119,4 +134,29 @@
         </dependency>
     </dependencies>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<layout>ZIP</layout>
+                	<includes>
+                		<include>
+                		    <groupId>nothing</groupId>
+                		    <artifactId>nothing</artifactId>
+                		</include>
+                	</includes>
+					<mainClass>net.mw.springcloud.ProviderTrafficApplication</mainClass>
+				</configuration>
+                	<executions>
+		                <execution>
+		                    <goals>
+		                        <goal>repackage</goal>
+		                    </goals>
+		                </execution>
+            		</executions>
+			</plugin>		
+		</plugins>
+	</build>
 </project>

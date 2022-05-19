@@ -73,7 +73,7 @@ public class CarController {
 		return rs;
     }
 
-	@PostMapping(value = "/recognize")
+	@PostMapping(value = "/recognize", produces = {"application/json;charset=UTF-8"})
 	public ResultMessage recognize(@RequestParam("image") MultipartFile image){
 		logger.trace("进入recognize方法");
 		ResultMessage rs=service.getCode(image);

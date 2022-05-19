@@ -47,6 +47,15 @@ public class AuthController {
     @Autowired
     private UserDao userDao;
 
+	@PostMapping(value = "/updateCarId")
+	public ResultMessage updateCarId(@RequestBody UserVO vo){
+		logger.trace("进入 updateCarId 方法");
+		UserPO po = vo.voToPo(UserPO.class);
+		ResultMessage rs=service.updateCarId(po);
+		logger.trace("退出 updateCarId 方法");
+		return rs;
+	}
+
     @GetMapping(value = "/info")
     public ResultMessage info(HttpServletRequest request, @CurrentUser UserPO currentUser){
 		logger.trace("进入info方法");

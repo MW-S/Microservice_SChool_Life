@@ -1,6 +1,6 @@
 server:
   port: 8086
-
+school: 172.28.98.12
 management:
   endpoint:
     shutdown:
